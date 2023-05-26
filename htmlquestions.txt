@@ -1,0 +1,124 @@
+1) What is HTML?
+
+:-HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page. HTML consists of a series of elements. HTML elements tell the browser how to display the content.
+
+2) What are Elements?
+: tags are set of opening tags,content,and,ending tag
+
+3) What is formatting in HTML?
+:-The HTML formatting is a process of format the text for a better look and feel. It uses different tags to make text bold, italicized, underlined
+
+9) What is the difference between HTML elements and tags?
+:-HTML Tags are building blocks of HTML Page. HTML Elements are components that are used in HTML Page.	
+
+10) What is semantic tag HTML?
+:-A semantic element clearly describes its meaning to both the browser and the developer.
+
+11) What is an image map?
+An image map is an image with clickable areas.
+
+12) What is html entities?
+Entities are frequently used to display reserved characters (which would otherwise be interpreted as HTML code)
+
+14) How do you keep list elements straight in an HTMLfile?
+ :-You can keep the list elements straight by using text-indent properties of css.
+
+21) How many tags can be used to separate a section of texts?
+:-Three tags are used to separate the texts.
+
+<br> tag - Usually <br> tag is used to separate the line of text. It breaks the current line and conveys the flow to the next line
+<p> tag - The <p> tag contains the text in the form of a new paragraph.
+<blockquote> tag - It is used to define a large quoted section. If you have a large quotation, then put the entire text within <blockquote>.............</blockquote> tag.
+
+22) How to make a picture of a background image of a web page in html only?
+ :-To make a picture a background image on a web page, you should put the following tag code after the </head> tag.
+ex:o
+<body background = "image.gif">
+
+23) What are empty elements?
+ :-HTML elements with no content are called empty elements. For example: <br>, <hr> etc.
+
+24) What is the use of a span tag? Give one example.
+  :-The span tag is used for following things:
+
+For adding color on text
+For adding background on text
+Highlight any color text
+Example:
+
+<p>  
+<span style="color:#ffffff;">  
+In this page we use span.  
+</span>  
+</p>  
+
+25) What is the use of an iframe tag?
+:- an iframe tag is used to create nested web page(iframe)
+
+31) What are the different new form element types in HTML 5?
+:-Following is a list of 10 frequently used new elements in HTML 5:
+
+Color
+Date
+Datetime-local
+Email
+Time
+Url
+Range
+Telephone
+Number
+Search
+
+33) Which type of video formats are supported by HTML5?
+:- HTML 5 supports three types of video format:
+
+mp4
+WebM
+Ogg
+
+34) Is audio tag supported in HTML 5?
+:- Yes. It is used to add sound or music files on the web page. There are three supported file formats for HTML 5 audio tag.
+
+mp3
+WAV
+Ogg
+
+35) What is the difference between progress and meter tag?
+:- The progress tag is used to represent the progress of the task only while the meter tag is used to measure data within a given range.
+
+36) What is the use of figure tag in HTML 5?
+:-The figure tag is used to add a photo in the document on the web page. It is used to handle the group of diagrams, photos, code listing with some embedded content.
+
+37) What is the use of figcaption tag in HTML 5?
+:-The <figcaption> element is used to provide a caption to an image. It is an optional tag and can appear before or after the content within the <figure> tag. The <figcaption> element is used with <figure> element and it can be placed as the first or last child of the <figure> element.
+
+39) What is the use of details and summary tag?
+:-The details tag is used to specify some additional details on the web page. It can be viewed or hidden on demand. The summary tag is used with details tag. 
+
+40)What is datalist tag?
+:-The HTML 5 datalist tag provides an autocomplete feature on the form element. It facilitates users to choose the predefined options to the users to select data.
+
+41) How are tags migrated from HTML4 to HTML5?
+No.	Typical HTML4	          Typical HTML5
+1)	<div id="header">	   <header>
+2)	<div id="menu">	            <nav>
+3)	<div id="content">	   <section>
+4)	<div id="post">	           <article>
+5)	<div id="footer">	   <footer>
+
+42) If I do not put <!DOCTYPE html> will HTML 5 work?
+ :-Yes, HTML5 will still work without <!DOCTYPE html>, but it is highly recommended to include it as it helps web browsers understand how to interpret the HTML code and triggers standards mode.
+
+43) What is the use of the required attribute in HTML5?
+:-specifies that an input field must be filled out before submitting the form. 
+
+44) What are the new <input> types for form validation in HTML5?
+:- The new input types for form validation are email, URL, number, tel, and date.
+
+45) What are Attributes and how do you use them?
+:-
+
+
+
+
+
