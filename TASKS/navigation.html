@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+  ul{
+    display: flex;
+    justify-content: center;   
+  }
+  ul li{
+        display: inline-block;
+        text-align: center;
+        /* padding-left: 33px; */
+        /* background-color: aqua; */
+        padding: 22px;
+        position: relative;
+        background-color: black;
+    }
+    ul li::after{
+        content: " ";
+        width: 0px;
+        height: 5px;
+        background-color: lightseagreen;
+        /* border: 2px solid black; */
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        transition: 0.4s;
+        border-radius: 23px;
+    }
+    li:hover::after{
+        width: 100%;
+    }
+    .a{
+        width: 100%;
+        height: 200px;
+        border: 1px solid black;
+    }
+</style>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Gallery</a></li>
+    </ul>
+</nav>
+
+
+</div>
+</body>
+</html>

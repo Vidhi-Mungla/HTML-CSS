@@ -1,0 +1,67 @@
+<style>
+    .x
+    {
+      height: 400px;
+      width: 600px;  
+      background: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom1.jpg);
+      background-size: 120% 100%;
+      background-repeat: no-repeat;
+      background-position: -45px 0px;
+      position: relative;
+      border: 2px solid black;
+      transition: 0.4s;
+
+    }
+    .x:hover{
+        background-position:  0px 0px;
+        
+    }
+    .x:hover .y{
+        visibility: visible;
+       
+    }
+    .y
+    {
+        width: 500px;
+        height: 300px;
+        border: 10px solid white;
+        position: absolute;
+        top: 10%;
+        left: 40px;
+        color: white;
+        font-size: 20px; 
+        visibility: hidden;
+        transition: 0.4s;
+    }
+    
+    span{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 40px;
+    }
+    p::first-letter{
+        color: red;
+    }
+    p{
+        padding: 50px 0 0 250px;
+    }
+
+h4{
+    font-size: 18px;
+   transform: translate(70%,100%);
+   line-height: 100px;
+}
+</style>
+</head>
+<body>    
+<div class="x">
+    <span>
+    <p style="color: white;">FALL AHEAD</p>
+</span>
+   <div class="y">
+        <h4>New Arrivles</h4>
+   </div>
+</div>
+</body>
+</html>
