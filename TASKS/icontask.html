@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demosite</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+          *{margin: 10px;}
+        .icon
+        { display: inline-block;
+            height: 50px;width: 50px;
+            line-height: 50px;
+            text-align: center;
+            background: black;
+            padding: 25 25;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            z-index: 0;
+         }
+         .icon::after
+        {
+            content: "";
+            height: 0; width: 0;
+            background: rgb(19, 169, 174);
+            transform: scale(0);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transition: 0.3s;
+            z-index: -1;
+        }
+
+        .icon:hover::after
+        {
+            height: inherit;width: inherit;
+            transform: scale(1);
+            top: 0%;
+            left: 0%;
+        }
+          
+    </style>
+</head>
+<body>
+    
+     <footer>
+        <span class="icon"><i class="fa fa-truck" aria-hidden="true" ></i> </span>
+         <span class="icon"><b><i class="fa fa-shopping-bag" aria-hidden="true"></i></b></span>
+         <span class="icon"> <b><i class="fa fa-headphones" aria-hidden="true"></i></b></span> 
+         <span class="icon"><b><i class="fa fa-gift" aria-hidden="true"></i></b> </span>
+     </footer>
+</body>
+</html>

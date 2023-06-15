@@ -1,0 +1,105 @@
+
+    <style>
+        body
+        {
+            background: green;
+            background: rgb(7, 181, 97);
+        }
+        .d
+        {
+            align-items: center;
+            border-radius: 50% 50%;
+            transform: scale(1);
+            transition: .3s;
+             animation: size 3s infinite linear; 
+        }
+        .d::after
+        {
+            content: "";
+            width: 130px;height: 130px;
+            width: 120px;height: 120px;
+            background:white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-radius: 50% 50%;
+            opacity: 0; 
+            transform: scale(0);
+            transition: 2s;
+            transition: 1.3s;
+             animation: size2 3s infinite linear ; 
+        }
+        .d::before
+        {
+            content: "";
+            width: 130px;height: 130px;
+            width: 140px;height: 140px;
+            background:white;
+            display: flex;
+            justify-content: center;
+
+            border-radius: 50% 50%;
+            transform: scale(0);
+            opacity: 0;
+            transition: 5s;
+        
+             animation: size3 2s infinite linear ; 
+        } 
+        .d:hover
+          .d:hover 
+        {
+            transform: scale(1.2);
+            transform: scale(1);
+        }
+        .d:hover::after
+        {
+             top: 0;
+            left: 0; 
+             top: 0;
+            left: 0;  
+        
+            transform: scale(1.3);
+            transform: scale(1);
+            opacity: .3;
+        }
+        .d:hover::before
+        {
+            height: 160px;width: 160px; 
+            transform: scale(1.5);
+            height: 160px;width: 160px;  
+            transform: scale(1);
+            opacity: .6;
+        }   
+
+         @keyframes size
+        {
+            from{transform: scale(1); }
+            to{ transform: scale(1.1);}
+        }  
+
+        @keyframes size2
+        {
+           0%{opacity: 0;transform: scale(.9);}
+           25%{opacity: .4;transform: scale(1);}
+           50%{opacity: .6;transform: scale(1.1);}
+           75%{opacity: .4;transform: scale(1.2);}
+           100%{opacity: 0;transform: scale(1.3);}
+        } 
+
+
+        @keyframes size3
+        {
+            0%{opacity: 0;transform: scale(.9);}
+           25%{opacity: .3;transform: scale(1);}
+           50%{opacity: .6;transform: scale(1.1);}
+           75%{opacity: .3;transform: scale(1.2);}
+           100%{opacity: 0;transform: scale(1.3);}
+        }  
+
+
+    </style>
+</head>
+<body>
+    <div class="d"></div>
+    </body>
+    </html>

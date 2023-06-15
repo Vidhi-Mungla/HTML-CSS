@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                *{box-sizing: border-box;}
+                
+        .x 
+        {
+            height: 250px;
+            width: 250px;
+            margin: 100px auto;
+            padding: 15px;
+            position: relative;
+        }
+
+        .y
+        {
+            height: 250px;
+            width: 250px;
+            background: transparent;
+            border: 10px solid transparent;
+            border-top: 10px solid lightcoral;   
+            animation: preloader 1s infinite linear  forwards;
+           position: absolute;
+           border-radius: 50%;
+
+           top: 0px;
+           left: 0px;
+        }
+
+        .z
+        {
+            height: 200px;
+            width: 200px;
+            background:transparent;
+            border: 10px solid transparent;
+            border-top: 10px solid darkcyan; 
+            animation: preloader1 1s infinite linear  forwards;
+            position: absolute;
+            border-radius: 50%;
+           top: 25px;
+           left: 25px;
+           
+        }
+
+        .a
+        {
+            height: 150px;
+            width: 150px;
+            background: transparent;
+            border: 10px solid transparent;
+            border-top: 10px solid lightcoral;   
+            padding: 15px;   
+            animation: preloader 1s infinite linear  forwards;
+           position: absolute;
+           border-radius: 50%;
+           left: 50px;
+           top: 50px;
+        }
+    .b
+        {
+            height: 100px;
+            width: 100px;
+            background: transparent;
+            border: 10px solid transparent;
+            border-top: 10px solid darkcyan;   
+            padding: 15px;   
+            animation: preloader1 1s infinite linear  forwards;
+           position: absolute;
+           border-radius: 50%;
+           top: 75px;
+           left: 75px;
+
+        }
+
+     
+        @keyframes preloader 
+        {
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+
+        @keyframes preloader1 
+        {
+            from{transform: rotate(360deg);}
+            to{transform: rotate(0deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="x">
+           <div class="y"></div>
+            <div class="z"></div>
+            <div class="a"></div>
+            <div class="b"></div>
+
+    </div>
+</body>
+</html>

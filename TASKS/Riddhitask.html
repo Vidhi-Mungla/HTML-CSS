@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body
+{
+	margin:0;
+	padding:0;
+}
+
+.btn{
+cursor:pointer;
+	position:relative;
+	padding:10px 20px;
+	background:white;
+	font-size:28px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	&:after,&:before
+    {
+		content:" ";
+		width:10px;
+		height:10px;
+		position:absolute;
+		border :0px solid #fff;
+	}
+	&:after
+    {
+		top:1px;
+		left:1px;
+		border-top:5px solid black;
+		border-left:5px solid black;
+	}
+	&:before
+    {
+		bottom:1px;
+		right:1px;
+		border-bottom:5px solid black;
+		border-right:5px solid black;
+	}
+	&:hover
+    {
+		border-top-right-radius:0px;
+	    border-bottom-left-radius:0px;
+		// background:rgba(0,0,0,.5);
+		// color:white;
+		&:before,&:after 
+        {
+
+		// border-color:white;
+		}
+	}
+}
+
+.x
+{
+	background:#ffebee;
+	height:100vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+    </style>
+</head>
+<body>
+    <div class="x">
+
+	<span class="btn">Riddhi</span>
+</div>
+</body>
+</html>
