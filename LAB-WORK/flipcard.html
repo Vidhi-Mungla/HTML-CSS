@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+     
+        
+
+        .main 
+        {
+            height: 250px;
+            width: 200px;
+            /* background: gray; */
+            margin: 50px auto;
+            position: relative;
+            box-shadow: 0 0 20px #000;
+        }
+        .front 
+        {
+            height: 250px;
+            width: 200px;
+            background: rgba(0,0,0,.34);
+            position: absolute;
+            top:0;
+            lefT:0;
+            transform: rotateY(180deg);
+            transition: 1s;
+            backface-visibility: hidden;
+        }
+        .back
+        {
+            height: 250px;
+            width: 200px;
+            background: lightcoral;
+            backface-visibility: hidden;
+            position: absolute;
+            top:0;
+            lefT:0;
+            transform: rotateX(0deg);
+            transition: 1s;
+        }
+        .main:hover .front 
+        {
+            transform: rotateY(0deg);
+        }
+        .main:hover .back 
+        {
+            transform: rotateY(180deg);
+        }
+</style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="front">
+            <img src="m7.jpg" alt="" height="100%" width="100%">
+
+        </div>
+        <div class="back">
+            <img src="m7.jpg" alt="" height="100%" width="100%">
+        </div>
+    </div>
+ 
+</body>
+</html>

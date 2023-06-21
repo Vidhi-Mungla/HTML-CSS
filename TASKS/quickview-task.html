@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0%;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main
+        {
+            width: 250px;
+            height: 350px;
+            background-color: lightgrey;
+           border: 1px solid rgb(105, 104, 104);
+            margin: 123px auto;
+            position: relative;
+            box-shadow: 0 0 20px #232121;
+
+        }
+        .new
+        {
+            height: 25px;
+            width: 50px;
+            position: absolute;
+            color: white;
+            background: lightcoral;
+            padding-right: 0;
+            text-align: center;
+            top: 0;
+            right :0;
+        }
+        .img
+        {
+            width: 100%;
+            height: 60%;
+           /* border: 1px solid black;*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .info
+        {
+            width: 100%;
+            height: 40%;
+           /* border: 1px solid black;*/
+            text-align: center;
+           
+        }
+        input
+        {
+            height: 30%;
+            width: 80%;
+            background: cyan;
+            border: none;
+            outline: 5px solid cyan;
+            outline-offset: 0%;
+            transition: 1s;
+        }
+        input:hover
+        {
+            outline-offset: 5px;
+        }
+       
+        .effect
+        {
+            width: 100%;
+            height: 33px;
+            background-color: black;
+            color: white;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            text-align: center;
+            line-height: 33px;
+            text-transform: uppercase;
+            transition: 0.5s;
+            opacity: 0;
+            cursor: pointer;
+            z-index: 12;
+        }
+        .effect:hover
+        {
+            background-color: cyan;
+        }
+        
+        .img:hover .effect 
+       {
+            top: 84%;
+            opacity: 1;
+     
+       }
+
+      .img1
+      {
+            width: 80%;
+            height: 75%;
+            position: relative;
+      }
+      .front
+      {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+           transform: rotateY(180deg);
+           transition: 1s;
+
+      }
+      .back
+      {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transform: rotateY(0deg);
+        transition: 1s;
+
+      }
+    
+      .bgwhite:hover
+      {
+        position: absolute;
+        background: white;
+        width: 100%;
+        height: 60%;
+      }
+
+      .img1:hover .front
+      {
+        transform: rotateY(0deg);
+      }
+
+      .img1:hover .back
+      {
+        transform: rotateY(180deg);
+      }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="new">New</div>
+  <div class="img">
+    <div class="bgwhite"></div>
+    <div class="effect">
+     Quick View
+    </div>
+    <div class="img1">
+        <div class="front">
+            <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="back">
+            <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="100%" width="100%">
+        </div>
+    </div>
+  </div>
+  <div class="info">
+   
+    <p style="color:rgb(232, 17, 85);">Formal Blue Shirt</p><br>
+
+    <p style="color:rgb(0, 0, 0);">$45.99 <s style="color: rgba(50, 43, 43, 0.631);">$69.71<s></p><br>
+        <input type="submit" value="ADD TO CART">
+  </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav 
+        {
+            /* height: 50px; */
+            background: coral;
+            text-align: center;
+            padding: 20px 0;
+            /* line-height: 50px; */
+
+            /* display: flex;
+            justify-content:  center;
+            align-items: center; */
+        }
+        *
+        {
+            margin: 0;
+            padding: 0;
+
+            /* word-spacing: 20px; */
+           
+        }
+        .menu
+        {
+            /* border: 2px solid; */
+            padding: 20px 0;
+            display: inline;
+            margin-right: 20px;
+            /* float: left;
+            list-style: none; */
+            position: relative;
+        }
+        a{
+            text-decoration: none;
+            color:#000;
+        }
+        .submenu 
+        {
+            background: darkgoldenrod;
+            position: absolute;
+            top:100%;
+            left:0;
+            width: 100px;
+            list-style-type: none;
+            /* margin-top: 20px; */
+            display: none;
+        }
+
+        .menu:hover .submenu
+        {
+            display: block;
+        }
+    
+        .submenu2 
+        {
+            background: rgb(226, 85, 137);
+            position: absolute;
+            width: 100px;
+            list-style: none;
+            /* margin-top: 20px; */
+            display: none;
+        }
+        .submenu:hover .submenu2
+        {
+            display: block;
+            position: relative;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <ul>
+            <li class="menu"><a href="">Home</a></li>
+            <li class="menu"><a href="">About</a></li>
+            <li class="menu"><a href="">Service</a>
+
+                <ul class="submenu">
+                    <li><a href="">Service 1</a>
+                        <ul class="submenu2">
+                            <li><a href="">Service 1</a></li>
+                            <li><a href="">Service 2</a></li>
+                            <li><a href="">Service 3</a></li>
+                            <li><a href="">Service 4</a></li>
+                       </ul>
+              
+                    </li>
+                    <li><a href="">Service 2</a></li>
+                    <li><a href="">Service 3</a></li>
+                    <li><a href="">Service 4</a></li>
+                </ul>
+             </li>
+         <li class="menu"><a href="">Contact</a></li>
+     </ul>
+
+    </div>
+    
+</body>
+</html>

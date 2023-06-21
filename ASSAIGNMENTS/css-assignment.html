@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+      *
+      {
+         padding: 0;
+         margin: 0;
+
+      }
+      .letter
+      {
+       background: black;
+       height: 100%;
+       width: 22%;
+       color: #fff;
+       font-size: 20px;
+       position: absolute;
+       right: 0px;
+       text-align: right;
+      text-decoration: none;
+      line-height: 60px;
+       
+      }
+      .gallery
+      {
+         padding: 0;
+         margin: 0;
+         padding: 10px;
+         padding-right: 10%;
+         max-width: 1100px;
+         margin: 0 auto;
+         background: black;
+         display: grid;
+         grid-gap: 10px;
+         grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+         grid-auto-flow: dense;
+         grid-auto-rows: 250px;
+         position: relative;
+
+      }
+      
+      .v-stretch
+      {
+         grid-row: span 2;
+      }
+
+      .h-stretch
+      {
+         grid-column: span 2;
+      }
+
+
+      .big-stretch
+      {
+         grid-row: span 2;
+         grid-column: span 2;
+      }
+  
+      .gallery div img{
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+
+      }
+      @media(max-width:560px)
+     {
+      .v-stretch{
+         grid-row: span 1;
+      }
+      .h-stretch{
+         grid-column: span 1;
+      }
+      .big-stretch
+      {
+         grid-row: span 1;
+         grid-column: span 1;
+      }
+
+   
+     }
+   </style>
+</head>
+<body>
+     <div class="gallery">  
+      <div>
+         <img src="1.jpg" alt="">
+      </div>
+
+      <div class="v-stretch">
+         <img src="2.jpg" alt="">
+      </div>
+
+      <div class="h-stretch">
+         <img src="3.jpg" alt="">
+      </div>
+
+      <div>
+         <img src="4.jpg" alt="">
+      </div>
+
+      <div>
+         <img src="5.jpg" alt="">
+      </div>
+
+      <div class="v-stretch">
+         <img src="6.jpg" alt="">
+      </div>
+
+      <div class="big-stretch">
+         <img src="7.jpg" alt="">
+      </div>
+
+      <div>
+         <img src="8.jpg" alt="">
+      </div>
+
+      <div class="h-stretch">
+         <img src="9.jpg" alt="">
+      </div>
+
+      <div>
+         <img src="10.jpg" alt="">
+      </div>
+
+      <div>
+         <img src="5.jpg" alt="">
+      </div>
+
+      <div>
+         <img src="1.jpg" alt="">
+      </div>
+
+      <div>
+         <img src="7.jpg" alt="">
+
+      </div>
+      <div class="letter">
+         <span style="font-size: 40px;">SHUTTER</span>
+
+         <ul>
+            <li><div style="color: orangered;">HOME</div></a></li>
+            <li><div>PHOTOS</div></a></li>
+            <li><div>BIO</div></a></li>
+            <li><div>bLOG</div></a></li>
+            <li><div>CONTACT</div></a></li>
+
+        </ul>
+        <tr>
+         <td><i class="fa-brands fa-facebook"></i>
+         </td>
+         <td><i class="fa-brands fa-twitter"></i>
+         </td>
+         <td"><i class="fa-brands fa-instagram"></i>
+         </td>
+
+        </tr>
+        </div>
+ </div>
+</body>
+</html>

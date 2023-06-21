@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{margin: 0;box-sizing: border-box;}
+        .card
+        {
+            height: 350px;
+            width: 200px;
+            background: gray;
+            position: relative;
+            margin: 100px auto;
+        }
+        .prd-img 
+        {
+            height: 250px;
+            width: 200px;
+            background: lightblue;
+            padding: 25px;
+        }
+
+        .prd-view
+        {
+            height: 50px;
+            width: 200px;
+            background: lightcoral;
+            position: absolute;
+            top:0px;
+            left:0;
+            transition: .85s;
+            /* display: none; */
+            /* visibility: hidden; */
+            opacity: 0;
+        }
+
+
+        .prd-info
+        {
+            height: 100px;
+            width: 200px;
+            background: darkgoldenrod;
+            text-align: center;
+    
+        }
+
+        .prd-img:hover .prd-view 
+        {
+            top:200px;
+            /* display: block; */
+            /* visibility: visible; */
+            opacity: 1;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="prd-img">
+            <img src="dummy.jpg" alt="" height="100%" width="100%">
+
+            <div class="prd-view">Quick view</div>
+        </div>
+       
+        <div class="prd-info">
+            
+                <p style="color:rgb(232, 17, 85);">Formal Blue Shirt</p><br>
+                <p style="color:rgb(28, 2, 10);">$45.99 <del style="color: rgba(0, 0, 0, 0.382);">$69.71</del></p><br>
+          
+        
+            <button>Add to Cart</button>
+        </div>
+    </div>
+    
+</body>
+</html>
