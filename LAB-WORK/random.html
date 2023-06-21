@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+#circle-loader-wrap {
+  overflow: hidden;
+  position: relative;
+  margin-top: -10px;
+  width: 200px;
+  height: 200px;
+
+  background: linear-gradient(90deg, #fdbd39,#ee6723,#E06387);
+  border-radius: 200px;
+
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+#circle-loader-wrap:after {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background-color: white;
+
+}
+
+#circle-loader-wrap div {
+  overflow: hidden;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+
+#circle-loader-wrap .loader {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1000px;
+  background-color: white;
+}
+
+#circle-loader-wrap .left-wrap {
+  left: 0;
+}
+
+#circle-loader-wrap .left-wrap .loader {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  transform-origin: 0 50% 0;
+  -webkit-transform-origin: 0 50% 0;
+  animation: loading-left 2s infinite linear;
+  -webkit-animation: loading-left 2s infinite linear;
+}
+
+#circle-loader-wrap .right-wrap {
+  left: 50%;
+}
+
+#circle-loader-wrap .right-wrap .loader {
+  left: -100%;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  transform-origin: 100% 50% 0;
+  -webkit-transform-origin: 100% 50% 0;
+  animation: loading-left 2s infinite linear;
+  -webkit-animation: loading-left 2s infinite linear;
+}
+
+@keyframes loading-left {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+  }
+}
+
+@-webkit-keyframes loading-left {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+  }
+}
+
+@keyframes loading-right {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+    100% {
+    -webkit-transform: rotate(180deg);
+  }
+
+}
+
+@-webkit-keyframes loading-right {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+  }
+
+}
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-3">
+        <div id="circle-loader-wrap">
+          <div class="left-wrap">
+            <div class="loader"></div>
+          </div>
+          <div class="right-wrap">
+            <div class="loader"></div>
+          </div>
+        </div>
+      </div>
+    </div></div>
+
+</body>
+</html>
