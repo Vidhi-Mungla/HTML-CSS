@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>                                                                                                                   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{box-sizing: border-box;}
+        .main 
+        {
+            background: lightcoral;
+            display: grid;
+            grid-template-columns:10fr 90fr ;
+            grid-template-rows:100px 200px;
+        }
+
+        .x,.y,.y1,.p
+        {
+            /* width: 25%;
+            height: 100px; */
+            border: 2px solid;
+            font-size: 30px;
+            font-weight:bold;
+            font-family:cursive;
+        }
+
+        .innerDiv 
+        {
+            display:grid;
+            grid-template-columns: 
+            1fr 1fr 1fr;
+        }
+
+        .test 
+        {
+            display:grid;
+           
+        }
+
+        .test123 
+        {
+            display:grid;
+            background: gray;
+            padding:20px;        
+            /* grid-template-columns:
+             1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+             grid-template-columns:repeat(4,1fr);
+        }       
+        /* .p 
+        {
+            margin: ;
+        } */
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <div class="x">1</div>
+
+        <div class="x innerDiv">
+            <div class="y">part-1</div>
+
+            <div class="y test">
+                <div class="y1">up</div>
+                <div class="y1">Down</div>
+            </div>
+
+            <div class="y">part-3</div>
+        </div>
+
+        <div class="x">3</div>
+        <div class="x test123"> 
+            <div class="p">p1</div>
+            <div class="p">p1</div>
+            <div class="p">p1</div>
+            <div class="p">p1</div>
+
+            <div class="p">p1</div>
+            <div class="p">p1</div>
+            <div class="p">p1</div>
+            <div class="p">p1</div>
+        </div>
+    </div>   
+</body>
+</html>
