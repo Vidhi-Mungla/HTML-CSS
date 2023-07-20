@@ -1,0 +1,37 @@
+@media(max-width:1100px)
+{
+.main .main-in .banner1 .header .link{
+    display: none;
+}
+.main .main-in .banner1 .header .actions a{
+    display: none;
+}
+
+.main .main-in .banner1 .header .logo{
+    width: 90%;
+}
+.main .main-in .banner1 .header .actions{
+    width: 10%;
+    color: black;
+}
+.main .main-in .banner1 .header .logo span{
+    display: block;
+}
+.main .main-in .banner1 .header{
+    background-color: white;
+   
+}
+.fa-circle-user
+{
+    color: black;
+    padding-top: 17px;
+} 
+
+
+
+
+
+
+
+    
+}

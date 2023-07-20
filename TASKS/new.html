@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body
+{
+  margin:0; 
+  padding:0; 
+ 
+}
+
+.right-eye{
+  background:rgb(146, 181, 96); 
+  height:200px;
+  width:150px; 
+  position:absolute;
+  top:50%;
+  left:30%;
+  border-radius : 50%; 
+  overflow:hidden;
+}
+
+
+.left-eye{
+  background:rgb(146, 181, 96); 
+  height:200px;
+  width:150px; 
+  position:absolute;
+  top:50%;
+  left:50%;
+  border-radius : 50% ;
+  overflow:hidden;
+}
+.ball{
+  width:40px; 
+  height:40px; 
+  background: #023205;
+  border-radius: 50%; 
+  border: 10px solid #000;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  animation: sun-eyesright 3s linear infinite;
+
+
+}
+
+.shut{
+  width:300px; 
+  height:200px;
+  top:50%; 
+  left:50%;
+  position:absolute;
+  transform:translate(-50%,-50%) ;
+  z-index:10;   
+
+}
+
+.shut span{
+  display:block;
+  width:100%; 
+  height:100%; 
+  background:#8f68d9; 
+  border-radius: 0 0 60% 60%;
+  animation-name: anim;
+  animation-duration: 3s;
+  animation-iteration-count: 5;
+  position: absolute;
+  top: -200px;
+  left: 0;
+
+}  
+
+@keyframes anim
+{
+    from{
+      transform: translate(0,0);
+        }
+    to{
+      transform: translate(0,200px);
+    }
+    
+}
+ /*
+ @keyframes anim2
+{
+    from{transform: translate(0,0)}
+    to{transform: translate(-160%,0)}
+
+}  */
+
+@keyframes sun-eyesright {
+  from {
+    -webkit-transform: translate(100px,0px)
+  }
+  to {
+    -webkit-transform: translate(-350px, 0px)
+  }
+}
+img.eyebrow1 {
+  top: 40%;
+  left: 50%;
+   position: absolute;
+    -webkit-animation: mover 0.50s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+img.eyebrow2 {
+  top: 40%;
+  left: 30%;
+  position: absolute;
+    -webkit-animation: mover 0.50s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+   </style>
+</head>
+<body>
+  <img src="eyebrow.png" class="eyebrow1" height="60px" width="150px" />
+
+    <div class="right-eye">
+        <div class="shut">
+          <span></span>
+        </div>
+        <div class="ball">
+      </div>
+      </div>
+      <img src="eyebrow.png" class="eyebrow2" height="60px" width="150px"/>
+
+    <div class="left-eye">
+
+        <div class="shut">
+          <span></span>
+        </div>
+        <div class="ball">
+      </div>
+      </div>
+    
+</body>
+</html>

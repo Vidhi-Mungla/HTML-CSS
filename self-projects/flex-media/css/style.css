@@ -1,0 +1,229 @@
+body *{border: 1px solid black; box-sizing: border-box;color: white;}
+
+.banner
+{
+    height: 700px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 66, 166, 0.11) 0%, #004274 100%), url(../images/img1.jpg);
+    
+    /* background: url(../images/img1.jpg); */
+    background-size: 100% 100%;
+}
+.banner .header
+{
+    height: 150px;
+}
+.banner .info
+{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+}
+.banner .header .header-icon
+{
+    height: 50px;
+    display: flex;
+}
+.banner .header .header-nav
+{
+    height: 100px;
+    display: flex;
+}
+.banner .header .header-icon .social-icon
+{
+    height: 50px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 370px 0 70px;
+}
+.social-icon a{
+    height: 50px;
+    width: 45px;
+    padding-top: 10px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    font-size: 22px;
+    text-decoration: none;
+    /* color: white; */
+}
+.banner .header .header-icon .link
+{
+    height: 50px;
+    width: 50%;
+}
+.banner .header .header-icon .link .contact-area{
+margin-left: 30%;
+}
+.banner .header .header-icon .link .contact-area a{
+    display: inline-block;
+    border-right: 1px solid #ccc;
+    height: 40px;
+    line-height: 40px;
+    padding-inline: 15px;
+    text-decoration: none;
+    color: white;
+}
+.banner .header .header-nav .header-logo
+{
+    height: 100px;
+    width: 20%;
+    padding-left: 50px;
+}
+.banner .header .header-nav nav
+{
+    height: 100px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .header .header-nav nav ul{
+    border: none;
+    
+    
+}
+
+.banner .header .header-nav nav ul li{
+    display: inline;
+    padding: 20px 17px 20px 17px;
+    position: relative;
+   
+    
+}
+.banner .header .header-nav nav ul li a{
+    padding: 7px;
+    text-decoration: none;
+    color: white;
+    
+}
+.banner .header .header-nav nav ul li a:hover{
+    background-color: blue;
+}
+.banner .header .header-nav .header-contact
+{
+    height: 100px;
+    width: 30%;
+}
+.banner .info .content
+{
+    height: 200px;
+    width: 500px;
+    
+}
+.services
+{
+    width: 80%;
+    margin: auto;
+    margin-top: -100px;
+    margin-bottom: 100px;
+}
+.service
+{
+    text-align: center;
+  
+}
+.service ul li
+{
+    display: inline;
+}
+.services .cat .item{
+    width: 20%;
+}
+.services .cat{
+    display: flex;
+}
+.services select{
+    color: black;
+}
+.dropdown-1{
+    width: 300px;
+    height: auto;
+    border: 1px solid black;
+    background-color: pink;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    display: none;
+    
+}
+.header .header-nav nav ul li .dropdown-1 ul li{
+    display: block;
+    padding: 5px 0px 5px 0px;
+    text-align: left;
+    
+}
+.header .header-nav nav ul li .dropdown-1 ul{
+   padding: 10px 0px 15px 0px;
+}
+.header .header-nav nav ul li .dropdown-1 ul li a{
+    display: block;
+    padding: 10px;
+    background: transparent;
+}
+.header .header-nav nav ul li .dropdown-1 ul li a:hover{
+    background-color: blue;
+}
+.banner .header .header-nav nav ul li:hover .dropdown-1{
+    display: block;
+}
+.dropdown-2{
+    width: 1520px;
+    border: 1px solid black;
+    background-color: lightblue;
+    position: absolute;
+    top: 100%;
+    left: -457%;
+    display: flex;
+    padding: 10px 150px 15px 200px;
+    display: none;
+}
+.dropdown-2 .x
+{
+    width: 25%;
+   
+}
+.header .header-nav nav ul li .dropdown-2 ul li{
+    display: block;
+    text-align: left;
+    padding: 5px 0px;
+}
+.header .header-nav nav ul li .dropdown-2 ul{
+    padding: 10px 0px 15px 0px;
+ }
+ .header .header-nav nav ul li .dropdown-2 ul li a{
+    display: block;
+    padding: 10px;
+    background: transparent;
+}
+.banner .header .header-nav nav ul li:hover .dropdown-2{
+    display: block;
+    display: flex;
+}
+.dropdown-3{
+    width: 300px;
+    height: auto;
+    border: 1px solid black;
+    background-color: pink;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    display: none;
+}
+.header .header-nav nav ul li .dropdown-3 ul li{
+    display: block;
+    text-align: left;
+    padding: 7px 0px 7px 0px;
+}
+.header .header-nav nav ul li .dropdown-3 ul{
+    padding: 10px 0px 5px 0px;
+ }
+.header .header-nav nav ul li .dropdown-3 ul li a{
+    display: block;
+    padding: 0%;
+}
+.header .header-nav nav ul li:hover .dropdown-3{
+    display: block;
+}

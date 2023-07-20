@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+    .subheader .social
+{
+    text-align: left;
+    font-size:20px;
+    letter-spacing: 5px;
+    display: flex;
+}
+
+.symmain 
+{
+   height: 30px;
+   width: 30px;
+   position: relative;
+   transform-style:preserve-3d ;
+   transition: 1s;
+   display:inline-block ;  
+}
+
+ .symfront,.symup
+{
+    
+    height: 30px;
+    width: 30px;
+    color: white;
+    position: absolute;
+    transform: rotateX(0deg) translateZ(15px) translate(5px,10px);
+    backface-visibility: hidden;
+}
+.symup
+{
+    background:white;
+    color: black;
+    transform: rotateX(90deg) translateZ(15px) translate(5px,10px);
+}
+
+.fb{left: 15px;}
+.fb .symfront{ background:#3b5998 ;}
+.twit{left: 30px;}
+.twit .symfront{ background:#1da1f2;}
+.insta{left: 45px;}
+.insta .symfront{ background: #c32aa3;}
+.li{left: 60px;}
+.li .symfront{ background: #0a66c2;}
+
+.symmain:hover 
+{
+    transform: rotateX(-90deg);
+}
+</style>
+</head>
+<body>
+<li class="social">Share On :
+    <div class="symbol">
+        <div class="symmain fb"> 
+            <button class="symfront"><i class="fa fa-facebook"></i></button>
+             <button class="symup"><i class="fa fa-facebook"></i></button> 
+        </div>
+        <div class="symmain twit"> 
+            <button class="symfront"><i class="fa fa-twitter"></i></button>
+             <button class="symup"><i class="fa fa-twitter"></i></button> 
+        </div>
+        <div class="symmain insta"> 
+            <button class="symfront"><i class="fa fa-instagram"></i></button>
+             <button class="symup"><i class="fa fa-instagram"></i></button> 
+        </div>
+        <div class="symmain li"> 
+            <button class="symfront"><i class="fa fa-linkedin"></i></button>
+             <button class="symup"><i class="fa fa-linkedin"></i></button> 
+            </div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+@media(max-width:992px)
+{
+  .row .box {
+    width: 50%;
+    padding-left: 120px;
+}
+}
+@media(max-width:768px)
+{
+  .row .box {
+    width: 50%;
+    padding-left: 120px;
+
+}
+}
+@media(max-width:576px)
+{
+  .row .box 
+{
+    width:100%;
+    padding-left: 120px;
+
+}
+}
+
+
+@media(max-width:600px)
+{
+
+
+.icon-row .icons{
+  width: 50%;
+}
+   .main .text{
+    font-size: 17px;
+   }
+.main .scroll-img .first-part,.main .scroll-img .second-part{
+    flex-wrap: wrap;
+}
+
+.main .scroll-img .first-part .img,.main .scroll-img .second-part .img{
+    margin: 0%;
+    width: 100%;
+    margin: 50px 10px 50px 10px;
+}
+ 
+
+.main .scroll-img .third-part
+{
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+.main .scroll-img .third-part .img
+{
+    margin: 0%;
+    width: 100%;
+    margin: 50px 10px 50px 10px; 
+}
+
+.theme .circle .first .up .right, .theme .circle .second .up .right, .theme .circle .third .up .right, .theme .circle .four .up .right
+{
+      display: none;
+}
+.theme .circle .first .down .right, .theme .circle .second .down .right, .theme .circle .third .down .right, .theme .circle .four .down .right
+{
+    display: none;
+}
+
+.premium .roundimg
+{
+height: 2500px; 
+
+}
+
+.premium .twodiv
+{
+ flex-wrap: wrap;
+}
+
+.premium .twodiv .skin
+{
+ width: 100%;
+}
+
+.premium .twodiv .black
+{
+ width: 100%;
+}
+.twodiv .black .play-btn
+{
+    display: none;
+}
+
+.multicolor
+{
+height: 600px;
+width: 100%;
+}
+
+.multicolor .color .left
+
+{
+    width: 100%;
+}
+.multicolor .color img
+{
+    display: none;
+}
+.multicolor .color .right
+{
+    display: none;
+}
+
+.browser
+{
+    height: 800px;
+}
+.browser .multiimg
+{
+    top: 320px;
+    left:0px;  
+}
+
+.browser .lpimg
+{
+background-size: contain;
+top: 500px;
+left: 70px;
+}
+
+
+.innerpage h1
+{
+    font-size: 100px;
+    top: 170px;
+    left: 200px;
+
+}
+
+.innerpage b
+{
+    font-size: 30px;
+    top: 320px;
+    left: 120px;
+}
+
+.document img
+{
+    top: 80px;
+    left: 100px;
+}
+.document b
+{
+    font-size: 4vh;
+    top: 90px;
+    left: 200px;
+}
+
+}

@@ -19,18 +19,23 @@
     }
   ul{
     display: flex;
-    justify-content: center;   
+    justify-content: center; 
+    text-align: center;
+  
   }
   ul li{
+        width: 100%;
         display: inline-block;
         text-align: center;
         /* padding-left: 33px; */
         /* background-color: aqua; */
         padding: 22px;
         position: relative;
+        display: flex;
         background-color: black;
     }
-    ul li::after{
+    ul li::after
+    {
         content: " ";
         width: 0px;
         height: 5px;
@@ -42,10 +47,12 @@
         transition: 0.4s;
         border-radius: 23px;
     }
-    li:hover::after{
+    li:hover::after
+    {
         width: 100%;
     }
-    .a{
+    .a
+    {
         width: 100%;
         height: 200px;
         border: 1px solid black;
@@ -62,8 +69,6 @@
         <li><a href="#">Gallery</a></li>
     </ul>
 </nav>
-
-
 </div>
 </body>
 </html>

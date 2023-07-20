@@ -1,0 +1,740 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body *{ box-sizing: border-box;}
+
+.maintamplate
+{
+    height: 100px;
+    width: 100px;
+    border: 2px solid #B19777;
+    position: fixed;
+    font-size: 20px;
+    bottom: 50px;
+    right: 50px;
+    color: #B19777;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.banner
+{
+    height:1400px;
+    width: 100%;
+    background-image: url('../images/banner-bg.webp');  
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.banner .square-div
+{
+    height: 280px;
+    width: 35%;
+    font-size: 3lvh;
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 30%;   
+}
+.banner .square-div .img-div
+{
+    height: 50px;
+    margin-bottom: 50px;
+}
+
+.banner .square-div b
+{
+    padding-left: 80px;
+}
+.banner .square-div span
+{
+    padding-left: 80px;
+}
+
+.banner .square-div .border
+{
+    height: 2px;
+    width: 70px;
+    background-color:#B19777;
+    position: absolute;
+    top: 110px;
+    left: 0px;
+    
+}
+
+.banner .square-div .multi-plugins
+{
+    height: 50px;
+    width: 400px;
+    background-image: url('../images/multi-plugins.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 200px;
+    left: 95px;
+    
+}
+
+
+.banner .img1 img
+{   
+    position: absolute;
+    top: -3;
+    left: 25%;
+}
+.banner .img2 img
+{
+    position: absolute;
+    top: 0px;
+    left: 60%;
+}
+
+.banner .img3 img
+{  
+    position: absolute;
+    top: 10%;
+    left: 80%;
+ }
+
+.banner .img4 img
+{   
+    position: absolute;
+    top: 40%;
+    left: 88%; 
+}
+
+.banner .img5 img
+{
+    position: absolute;
+    top: 55%;
+    left: 65%;
+}
+
+.banner .img6 img
+{
+    position: absolute;
+    top: 50%;
+    left: 35%; 
+}
+
+.banner .img7 img
+{    
+    position: absolute;
+    top: 53%;
+    left: 15%; 
+}
+
+.banner .img8 img
+{   
+    position: absolute;
+    top: 70%;
+    left: 3%;
+}
+
+.banner .img9 img
+{  
+    position: absolute;
+    top: 30%;
+    left: 3%;
+}
+
+.banner .img10 img
+{ 
+    position: absolute;
+    top: 5%;
+    left: 6%;
+}
+
+.design
+{
+    height: auto;
+    width: 100%;
+    background-color: white;   
+}
+
+.icon-row
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.icon-row .icons
+{
+    width: 33.33%;
+    height: 283px;
+    text-align: center;
+}
+.icon-row .icons .icons-img
+{
+    width: 100%;
+    height: 60%;
+    margin-top: 100px;
+}
+.icon-row .icons .icons-img img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.icon-row .icons .img-title
+{
+    width: 100%;
+    height: 40%;
+    font-size: 30px;
+}
+
+.icon-row img
+{
+   object-fit: contain;
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.web-template-1,.web-template-2,.web-template-3,.web-template-4,.web-template-5,.web-template-6{
+width: 304px;
+height: 700px;
+background: url('../images/4.jpg');
+background-size: 100% 140%;
+background-repeat: no-repeat;
+background-position: 0px 0px;
+transition: 10s;
+margin: 20px;
+text-align: center;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}   
+.web-template-2{
+background: url('../images/1.jpg');
+} 
+.web-template-3{
+background: url('../images/3.jpg');
+} 
+.web-template-4{
+background: url('../images/5.jpg');
+} 
+.web-template-5{
+background: url('../images/6.jpg');
+} 
+.web-template-6{
+background: url('../images/2.jpg');
+} 
+.web-template-7{
+width: 304px;
+height: 324px;
+background: url('../images/img7.png');
+background-size: 100% 300%;
+background-repeat: no-repeat;
+background-position: 0px 0px;
+transition: 10s;
+margin: 20px;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.web-template-8{
+background: url('../images/8.jpg');
+}
+.web-template-9{
+background: url('../images/7.jpg');
+}
+.web-template-1:hover,.web-template-2:hover,.web-template-3:hover,.web-template-4:hover,.web-template-5:hover,.web-template-6:hover,.web-template-7:hover{
+background-position: 0px 80%;
+}
+.web-template-8,.web-template-9{
+width: 304px;
+height: 324px;
+margin: 20px;
+background-size: contain;
+background-repeat: no-repeat;
+transition: 10s;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.web-template-8:hover,.web-template-9:hover{
+background-position: 0px 100%;
+}
+.row-title{
+width: 40%;
+padding-top: 40px;
+padding-bottom: 40px;
+text-align: center;
+margin: auto;
+font-family: sans-serif;
+}
+.row-title b{
+color: #B19777;
+}
+
+.web-img h2{
+text-align: center;
+}
+.row .box {
+width: 33.33%;
+height: auto;
+display: flex;
+justify-content: center;
+}
+
+.row span
+{
+    color: #B19777;
+}
+
+
+.theme
+{
+  height: 600px;
+  width: 100%;
+  background-image: url('../images/BG_fs.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+
+
+.theme .features-box
+{
+    height: 150px;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    line-height: 150px;
+}
+
+.theme .circle 
+{
+   height: 450px;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.theme .circle .content
+{
+    height: 350px;
+    width: 80%;
+    margin: auto;
+    line-height: 350px;
+    display: flex;
+}
+
+.theme .circle .content .first
+{
+    height: 350px;
+    width: 25%;  
+}
+
+.theme .circle .first .up,.theme .circle .second .up,.theme .circle .third .up,.theme .circle .four .up
+{
+    height: 175px;
+    width: 100%;  
+    display: flex;
+}
+
+.theme .circle .first .up .left, .theme .circle .second .up .left, .theme .circle .third .up .left, .theme .circle .four .up .left
+{
+    
+    height: 175px;
+    width: 30%;  
+    position: relative;
+}
+
+.theme .circle .first .up .right, .theme .circle .second .up .right, .theme .circle .third .up .right, .theme .circle .four .up .right
+{
+    
+    height: 175px;
+    width: 70%;  
+    position: relative;
+}
+
+.theme .circle .first .down,.theme .circle .second .down,.theme .circle .third .down,.theme .circle .four .down
+{
+    height: 175px;
+    width: 100%;  
+    display: flex;
+}
+
+.theme .circle .first .down .left, .theme .circle .second .down .left, .theme .circle .third .down .left, .theme .circle .four .down .left
+{
+    
+    height: 175px;
+    width: 30%;  
+    position: relative;
+}
+
+.theme .circle .first .down .right, .theme .circle .second .down .right, .theme .circle .third .down .right, .theme .circle .four .down .right
+{   
+    height: 175px;
+    width: 70%;  
+    position: relative;
+}
+
+.theme .circle .second
+{
+    height: 550px;
+    width: 25%;  
+}
+
+.theme .circle .third
+{
+    height: 350px;
+    width: 25%; 
+}
+
+.theme .circle .four
+{
+    height: 350px;
+    width: 25%; 
+}
+
+.theme .circle .content b
+{
+    font-size: 2vh;
+    color: white;
+    letter-spacing: 1px;
+    position: absolute;
+    top: -150px;
+    left: 0;
+}
+
+.theme .circle .content .y
+{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #B19777;
+    position: relative;
+}
+
+.theme .circle .content .y i
+{
+    color: white;
+    font-size: 4vh;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.theme .circle .content .four .up .left .y i, .theme .circle .content .first .down .left .y i, .theme .circle .content .third .down .left .y i
+{
+    top: -130px;
+    left: 30px;
+}
+
+.premium
+{
+    height: 700px;
+    width: 100%;
+    background-color: white;
+}
+
+.premium .text2
+{
+    height: 300px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 100px;
+}
+
+.premium .roundimg
+{
+height: 600px; 
+padding-left: 130px;
+margin-bottom: 200px;
+}
+
+.premium .twodiv
+{
+ height: 300px;
+ width: 100%;
+ display: flex;
+}  
+
+.twodiv .skin
+{
+ height: 300px;
+ width: 50%;
+ background-color:#B19777 ;
+ position: relative;
+}
+.twodiv .skin b
+{
+    font-size: 5vh;
+    position: absolute;
+    letter-spacing: 1px;
+    top: 100px;
+    left: 200px;
+}
+ 
+.twodiv .skin span
+{
+    font-size: 3vh;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 70px;
+    left: 100px;
+}
+.twodiv .skin .arrow
+{
+    height: 80px;
+    width: 80px;
+    background-color:black;
+    border-radius: 50%;
+    position: absolute;
+    top: 120px;
+    left: 650px;
+}
+
+.twodiv .skin .arrow i
+{
+    color: white;
+    font-size: 3vh;
+    position: absolute;
+    top: 30px;
+    left: 35px; 
+}
+
+.twodiv .black
+{
+ height: 300px;
+ width: 50%;
+ background-color: black;
+ position: relative;     
+}
+
+.twodiv .black .play-btn
+{
+    height: 80px;
+    width: 80px;
+    background-color: #B19777;
+    border-radius: 50%;
+    margin: 120px 0px 0px 40px;
+}
+.twodiv .black .play-btn i
+{
+    font-size:3vh;
+    color: white;
+    padding: 25px 30px;
+}
+
+.twodiv .black b
+{
+    font-size: 5vh;
+    color: white;
+    position: absolute;
+    letter-spacing: 1px;
+    top: 120px;
+    left: 150px;
+}
+
+.twodiv .black span
+{
+    font-size: 25px;
+    color:#B19777;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+}
+
+.multicolor
+{
+height: 800px;
+width: 100%;
+}
+
+.multicolor .text3 
+{
+    height: 200px;
+    width: 80%;
+    font-size: 2vh;
+    margin: auto;
+    text-align: center;
+    line-height: 60px;
+    padding-top: 100px;
+    letter-spacing: 1px;
+  
+}
+.color
+{
+    height: 600px;
+    width: 100%;
+    position: relative;
+    
+}
+
+.multicolor .color img
+{
+    padding-top: 100px;
+    padding-left: 600px;
+   
+}
+
+.multicolor .text3 span
+{
+color:#B19777;
+font-size:35px;
+}
+
+.multicolor .color .left
+{
+height: 200px;
+width: 35%;
+position: absolute;
+top: 170px;
+left: 70px;
+line-height: 25px;
+}
+
+.multicolor .color .left b, .multicolor .color .right b
+{
+ font-size: 3vh;
+}
+.multicolor .color .left span
+{
+font-size: 3vh;
+}
+
+.multicolor .color .left p
+{
+font-size: 16px;
+}
+
+
+
+.multicolor .color .right
+{
+    height: 200px;
+    width: 35%;
+    position: absolute; 
+    top: 170px;
+    left: 1000px;
+
+}
+.browser
+{
+    height: 1100px;
+    width: 100%;
+    background-color: black;
+    border: 2px solid white;
+    position: relative;
+}
+
+.browser .text4 
+{
+    height: 200px;
+    width: 80%;
+    background-color: black;
+    color: white;
+    margin: auto;
+    text-align: center;
+    line-height: 50px;
+    padding-top: 80px;
+}
+
+.browser .text4 b
+{
+    font-size: 45px;
+
+}
+.browser .text4 p
+{
+    font-size: 20px;
+
+}
+
+.browser .multiimg
+{
+    height: 100px;
+    width: 100%;
+    background-image: url('../images/multi-browsers.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    position: absolute;
+    top: 300px;
+    left:340px;    
+}
+
+.browser .lpimg
+{
+height: 500px;
+width: 80%;
+background-image: url('../images/browsers-preview.png');
+background-repeat: no-repeat;
+background-size: cover;
+position: absolute;
+top: 500px;
+left: 180px;
+
+}
+
+.innerpage
+{
+    height: 600px;
+    width: 100%;
+    background-image: url(../images/multi-left-1.png),url(../images/multi-right-1.png);
+    background-size: 34% 200%,40% 200%;
+    background-repeat: no-repeat,no-repeat;
+    background-position: 0 0,110% 1%;
+    text-align: center;
+    padding-top: 230px;
+    position: relative;
+}
+
+.innerpage h1
+{
+    font-size: 180px;
+    position: absolute;
+    top: 150px;
+    left: 650px;
+
+}
+
+.innerpage b
+{
+    font-size: 45px;
+    position: absolute;
+    top: 350px;
+    left: 580px;
+}
+
+.document
+{
+    height: 250px;
+    width: 100%;
+    background-color: #B19777;
+    padding-top: 100px;
+    padding-right: 600px;
+    position: relative;
+
+}
+
+.document img
+{
+    position: absolute;
+    top: 90px;
+    left: 630px;
+}
+
+.document b
+{
+    font-size: 4vh;
+    position: absolute;
+    top: 100px;
+    left: 730px;
+}
+
+.footer
+{
+    height: 80px;
+    width: 100%;
+    background-color:black;
+    color: #B19777;
+    text-align: center;
+    line-height: 80px;
+    font-size: 2vh;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      .wrapper {
+        padding: 50px 50px;
+        max-width: 1200px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .container {
+        width: 45%;
+        margin: 20px;
+        height: 300px;
+        border: 3px solid #eee;
+        overflow: hidden;
+        position: relative;
+        float: left;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .child {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition:.30s;
+      }
+      .bg-one {
+        background-image: url(css/images/chicago.jpg);
+      }
+      span {
+      }
+      .container:hover .child,
+      .container:focus .child {
+        -ms-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+      }
+      .container:hover .child:before,
+      .container:focus .child:before {
+        display: block;
+      }
+      .container:hover span,
+      .container:focus span {
+        display: block;
+      }
+      .child:before {
+        content: "";
+        display: none;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(52, 73, 94, 0.75);
+      }
+      @media screen and (max-width: 960px) {
+        .container
+         {
+          width: 100%;
+          margin: 20px 0;
+         }
+        .wrapper
+         {
+          padding: 20px;
+         }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="child bg-one">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
