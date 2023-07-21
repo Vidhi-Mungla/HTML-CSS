@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<style>
+ *
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ .form
+ {
+      height: 800px;
+      width: 60%;
+      margin: auto;
+      background-color: rgb(76, 140, 186);
+ }
+ .form p
+ {
+    font-size: 25px;
+    margin: 30px 0px 30px 30px;
+    padding-bottom: 20px;
+    word-spacing: 10px;
+    border: transparent;
+    border-bottom: 1px solid black;
+    
+ }
+
+ .address
+ {
+    height: 150px;
+    width: 95%;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    
+ }
+ 
+ .address .add
+ {
+    width: 33.33%;
+
+ }
+ .address .contact
+ {
+    width: 33.33%;
+    padding-top: 40px;
+    line-height: 20px;
+    
+ }
+ .address .contact span{
+    
+    font-weight: bold;
+ }
+
+ .address .location
+ {
+    width: 33.33%;
+    text-align: center;
+    line-height: 150px;
+ }
+ .address .location i{
+    font-size: 30px
+ }
+
+ .detail
+ {
+    height: 450px;
+    width: 95%;
+    background-color: white;
+    margin: auto;
+    margin-top: 30px;
+    position: relative;
+    padding-top: 60px;
+    padding-left: 30px;
+    
+ }
+ .detail input
+ {
+    height: 40px;
+    width: 190px;
+    margin: 10px;
+ }
+ .detail .m
+ {
+    height: 80px;
+    width: 400px;
+    margin: 10px;
+ }
+.detail button
+{
+    height: 40px;
+    width: 70px;
+    color: white;
+    font-size: 16px;
+    background-color: red;
+    margin: 10px;
+
+}
+ .detail .map
+ {
+    height: 350px;
+    width: 45%;
+    position: absolute;
+    right: 30px;
+    top: 50px;
+    
+ }
+ .detail .icon
+ {
+    height: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    line-height: 30px;
+ }
+ .detail .icon .facebook
+ {
+   height: 30px;
+   width: 30px;
+   color: white;
+   background-color: blue;
+ }
+ .detail .icon .twitter
+ {
+    height: 30px;
+   width: 30px;
+   color: white;
+   background-color: cyan;
+ }
+ .detail .icon .linkin
+ {
+    height: 30px;
+   width: 30px;
+   color: white;
+   background-color: darkcyan;
+ }
+ .detail .icon .github
+ {
+    height: 30px;
+   width: 30px;
+   color: white;
+   background-color: black;
+ }
+
+</style>
+<body>
+    <div class="form">
+         <p>CONTACT US</p>
+
+         <div class="address">
+          <div class="add">
+            <b>ADDRESS : </b> <br><br>
+            <span>Saint Marco Street, 6th <br> 
+            floor, Tokyo, Japan, 123456.</span>
+
+          </div>
+          <div class="contact">
+            <i style="color: red;" class="fa-solid fa-square-phone"></i>  <span style="color: red;">+912345678901</span><br>
+          <i style="color: rgb(52, 166, 219);" class="fa-solid fa-envelope"></i>  <span style="color: rgb(52, 166, 219);">vidhimungla@gmail.com</span>
+        </div>
+          <div class="location">
+            <i style="color: rgb(186, 13, 13);" class="fa-solid fa-location-dot"></i>
+          </div>
+
+         </div>
+
+         <div class="detail">
+            <input type="text" placeholder="Name:">   
+            <input type="text" placeholder="Company:"> <br>
+            <input type="email" placeholder="Email:">  
+            <input type="number" placeholder="Mobile:"> <br>
+            <input class="m" type="text" placeholder="Message:">   <br>
+            <button>send</button>
+
+
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59354.477203072754!2d71.18603118749158!3d21.599392687038115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395880c72d516845%3A0x4e950cffb505bb12!2sAmreli%2C%20Gujarat%20365601!5e0!3m2!1sen!2sin!4v1685341638451!5m2!1sen!2sin" width="100%" height="350" style="border:0;" 
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <div class="icon">
+            <div class="facebook"><i class="fa-brands fa-facebook"></i></div>
+            <div class="twitter"><i class="fa-brands fa-twitter"></i></div>
+            <div class="linkin"><i class="fa-brands fa-linkedin"></i></div>
+            <div class="github"><i class="fa-brands fa-github"></i></div>
+          </div>
+
+
+          </div>
+         </div>
+    </div>
+</body>
+</html>
