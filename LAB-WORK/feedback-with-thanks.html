@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feedback Form</title>
+  <style>
+    /* Add your preferred styles here */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .form-container {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      font-weight: bold;
+    }
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Feedback Form</h2>
+    <form id="feedbackForm">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    function submitForm() {
+      // Get form data
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      // Prepare data to be sent (You can use AJAX or fetch API for more advanced implementations)
+      const formData = {
+        name,
+        email,
+        message,
+      };
+
+      // Save the data to the browser's local storage for the sake of this example
+      localStorage.setItem("feedbackData", JSON.stringify(formData));
+
+      // Redirect to the "Thank You" page
+      window.location.href = "thankyou.html";
+    }
+  </script>
+</body>
+</html>

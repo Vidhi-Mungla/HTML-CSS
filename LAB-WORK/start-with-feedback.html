@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .rating {
+      display: inline-block;
+      font-size: 0;
+    }
+    .rating > input {
+      display: none;
+    }
+    .rating > label {
+      position: relative;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin: 0;
+      cursor: pointer;
+    }
+    .rating > label:before {
+      content: '\2605';
+      font-size: 24px;
+      color: #ccc;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .rating > label:last-child {
+      margin-right: 0;
+    }
+    .rating > input:checked ~ label:before,
+    .rating > input:checked ~ label ~ label:before {
+      color: #ffcc00;
+    }
+  </style>
+</head>
+<body>
+  <h1>Feedback Form</h1>
+  <form>
+    <p>Rate your experience:</p>
+    <div class="rating">
+      <input type="radio" name="rating" id="star5" value="5" required>
+      <label for="star5"></label>
+      <input type="radio" name="rating" id="star4" value="4">
+      <label for="star4"></label>
+      <input type="radio" name="rating" id="star3" value="3">
+      <label for="star3"></label>
+      <input type="radio" name="rating" id="star2" value="2">
+      <label for="star2"></label>
+      <input type="radio" name="rating" id="star1" value="1">
+      <label for="star1"></label>
+    </div>
+    <br>
+    <label for="comments">Comments:</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Leave your comments here..."></textarea><br>
+    <button type="submit">Submit Feedback</button>
+  </form>
+</body>
+</html>
+
