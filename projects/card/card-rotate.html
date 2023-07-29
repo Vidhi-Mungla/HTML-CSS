@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+.rotate-card {
+    height: 1100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-gap: 130px;
+    text-align: center;
+}
+
+
+.card1, .card2, .card2,.card3,.card4,.card5,.card6,.card7, .card8 {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    margin-left: -50px;
+    background-color: white; 
+}
+
+.card1 .back, .card2 .back,.card3 .back,.card4 .back,.card5 .back,.card6 .back,.card7 .back,.card8 .back {
+   
+    backface-visibility: hidden;
+}
+
+
+.card1:hover, .card2:hover,.card3:hover,.card4:hover,.card5:hover,.card6:hover,.card7:hover,.card8:hover
+{
+    transform: rotateY(180deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+
+
+</style>
+<body>
+    <!-- card-rotate div start -->
+ <div class="rotate-card">
+
+ 
+<div class="card-grid">
+    <div class="card1">
+        <div class="front">
+            <img src="images/icons8-bedroom-64 (1).png" alt="">
+            <b>Bedrooms</b>
+            <p>Vestibulum augue tortor, <br>consequat eu diam a, <br> varius pulvinar ipsum.</p>
+        </div>
+        <div class="back" style="background: url(images/main-slider-01.jpg);">
+            <img src="images/icons8-bedroom-64 (1).png" alt="">
+            <b>Bedrooms</b>
+            <p>Vestibulum augue tortor, <br>consequat eu diam a, <br> varius pulvinar ipsum.</p>
+        </div>
+    </div>
+    <div class="card2">
+        <div class="front">
+            <img src="images/icons8-kitchen-64.png" alt="">
+            <b>Kitchens</b>
+            <p> Duis ultricies sodales <br> finibus. In ac feugiat eros <br>luctus sem.</p>
+        </div>
+        <div class="back">
+            <img src="images/icons8-kitchen-64.png" alt="">
+            <b>Kitchens</b>
+            <p> Duis ultricies sodales <br> finibus. In ac feugiat eros <br>luctus sem.</p>
+        </div>
+    </div>
+    <div class="card3">
+        <div class="front">
+            <img src="images/icons8-bedside-lamp-50.png" alt="">
+            <b>Lightings</b>
+            <p> Morbi orci mauris, lacinia <br>eu felis id, euismod <br> dapibus augue. Ante <br>ipsum primis.</p>
+        </div>
+        <div class="back">
+            <img src="images/icons8-bedside-lamp-50.png" alt="">
+            <b>Lightings</b>
+            <p> Morbi orci mauris, lacinia <br>eu felis id, euismod <br> dapibus augue. Ante <br>ipsum primis.</p>
+        </div>
+    </div>
+    <div class="card4">
+        <div class="front">
+            <img src="images/icons8-window-64.png" alt="">
+            <b>Windows</b>
+            <p>Vestibulum augue tortor, <br>consequat eu diam a, <br>varius pulvinar ipsum.</p>
+        </div>
+        <div class="back">
+            <img src="images/icons8-window-64.png" alt="">
+            <b>Windows</b>
+            <p>Vestibulum augue tortor, <br>consequat eu diam a, <br>varius pulvinar ipsum.</p>
+        </div>
+    </div>
+    <div class="card5">
+        <div class="front">
+            <img src="images/icons8-bathtub-80.png" alt="">
+            <b>Bathrooms</b>
+            <p>Duis ultricies sodales <br>finibus. In ac feugiat eros <br> luctus sem.</p>
+        </div>
+        <div class="back">
+            <img src="images/icons8-bathtub-80.png" alt="">
+            <b>Bathrooms</b>
+            <p>Duis ultricies sodales <br>finibus. In ac feugiat eros <br> luctus sem.</p>
+        </div>
+    </div>
+    <div class="card6">
+        <div class="front">
+            <img src="images/icons8-tree-64.png" alt="">
+            <b>Decoration</b>
+            <p>Morbi orci mauris, lacinia <br>eu felis id, euismod <br>dapibus augue. Ante <br>ipsum primis.</p>
+        </div>
+        <div class="back">
+            <img src="images/icons8-tree-64.png" alt="">
+            <b>Decoration</b>
+            <p>Morbi orci mauris, lacinia <br>eu felis id, euismod <br>dapibus augue. Ante <br>ipsum primis.</p>
+        
+        </div>
+    </div>
+    <div class="card7">
+        <div class="front">
+            <img src="images/icons8-fireplace-80.png" alt="">
+            <b>Fireplaces</b>
+            <p>Vestibulum augue tortor, <br>consequat eu diam a, <br>varius pulvinar ipsum.</p>
+        </div>
+        <div class="back">
+            <img src="images/icons8-fireplace-80.png" alt="">
+            <b>Fireplaces</b>
+            <p>Vestibulum augue tortor, <br>consequat eu diam a, <br>varius pulvinar ipsum.</p>
+        </div>
+    </div>
+    <div class="card8">
+        <div class="front">
+            <img src="images/icons8-fireplace-80.png" alt="">
+            <b>Fireplaces</b>
+            <p>Vestibulum augue tortor, <br>consequat eu diam a, <br>varius pulvinar ipsum.</p>
+        </div>
+        <div class="back">
+            <img src="images/icons8-fireplace-80.png" alt="">
+            <b>Fireplaces</b>
+            <p>Vestibulum augue tortor, <br>consequat eu diam a, <br>varius pulvinar ipsum.</p>
+        </div>
+    </div>
+ 
+ </div>
+</div>    
+<!-- card-rotate div end -->
+</body>
+</html>
