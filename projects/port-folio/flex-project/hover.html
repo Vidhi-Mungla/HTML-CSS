@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+
+.card-rotate-main
+{
+    height:1100px;
+    width: 100%;
+    background-color:#f3f3f3;
+}
+.card-rotate-main .sub-card
+{
+    height: 1000px;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;    
+    display: flex;
+}
+.card-rotate-main .sub-card .text
+{
+    height:460px;
+    width: 23%;
+    margin: 10px 10px 10px 10px;
+}
+.card-rotate-main .sub-card .text h2
+{
+    font-size: 50px;
+    line-height: 70px;
+}
+.card-rotate-main .sub-card .text p
+{
+    padding-top: 20px;
+    line-height: 27px;
+    word-spacing: 3px;
+    
+}
+.card-rotate-main .sub-card .text button
+{
+        width: 180px;
+        height: 50px;
+        font-size: 17px;
+        border: none;
+        background-color:black;
+        color: white;
+        border: 1px solid white;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        margin-top: 10px;
+}
+.card-rotate-main .sub-card .text button::after
+{
+        content: "Read More ->";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        background-color: white;
+       color: black;
+       font-size: 17px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       transition: 0.4s;
+}
+    
+.card-rotate-main .sub-card .text button:hover::after
+{
+        top: 0%;
+}
+
+.card-rotate-main .sub-card .first,.card-rotate-main .sub-card .second,.card-rotate-main .sub-card .third,.card-rotate-main .sub-card .four,.card-rotate-main .sub-card .five,.card-rotate-main .sub-card .six,.card-rotate-main .sub-card .seven
+{
+    border: 1px solid black;
+    height: 460px;
+    width: 23%;
+    background-color: white;
+    margin: 10px 10px 10px 10px;
+    position: relative;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.card-rotate-main .sub-card .first .front img,.card-rotate-main .sub-card .second .front img,.card-rotate-main .sub-card .third .front img,.card-rotate-main .sub-card .four .front img,.card-rotate-main .sub-card .five .front img,.card-rotate-main .sub-card .six .front img,.card-rotate-main .sub-card .seven .front img
+{
+    padding-top: 100px;
+    padding-left: 120px;
+}
+
+.card-rotate-main .sub-card .first .front b,.card-rotate-main .sub-card .second .front b,.card-rotate-main .sub-card .third .front b,.card-rotate-main .sub-card .four .front b,.card-rotate-main .sub-card .five .front b,.card-rotate-main .sub-card .six .front b,.card-rotate-main .sub-card .seven .front b
+{
+    font-size: 30px;
+    margin-left: 90px;   
+    margin-top: 90px; 
+}
+.card-rotate-main .sub-card .first .front p,.card-rotate-main .sub-card .second .front p,.card-rotate-main .sub-card .third .front p,.card-rotate-main .sub-card .four .front p,.card-rotate-main .sub-card .five .front p,.card-rotate-main .sub-card .six .front p,.card-rotate-main .sub-card .seven .front p
+{
+    text-align: center;
+    margin-top: 30px; 
+
+}
+
+.card-rotate-main .sub-card .first:hover,.card-rotate-main .sub-card .second:hover,.card-rotate-main .sub-card .third:hover,.card-rotate-main .sub-card .four:hover,.card-rotate-main .sub-card .five:hover,.card-rotate-main .sub-card .six:hover,.card-rotate-main .sub-card .seven:hover
+{
+    background-color: rgba(0, 0, 0, 0.362);
+}
+
+.card-rotate-main .sub-card .first .back b,.card-rotate-main .sub-card .second .back b,.card-rotate-main .sub-card .third .back b,.card-rotate-main .sub-card .four .back b,.card-rotate-main .sub-card .five .back b,.card-rotate-main .sub-card .six .back b,.card-rotate-main .sub-card .seven .back b
+{
+    font-size: 30px;
+    margin-left: 90px;   
+    margin-top: 90px; 
+    color: white;
+}
+
+.card-rotate-main .sub-card .back p,.card-rotate-main .sub-card .second .back p,.card-rotate-main .sub-card .third .back p,.card-rotate-main .sub-card .four .back p,.card-rotate-main .sub-card .five .back p,.card-rotate-main .sub-card .six .back p,.card-rotate-main .sub-card .seven .back p
+{
+    text-align: center;
+    margin-top: 30px; 
+    color: white;
+}
+
+.card-rotate-main .sub-card .first:hover,.card-rotate-main .sub-card .second:hover,.card-rotate-main .sub-card .third:hover,.card-rotate-main .sub-card .four:hover,.card-rotate-main .sub-card .five:hover,.card-rotate-main .sub-card .six:hover,.card-rotate-main .sub-card .seven:hover
+{
+    transform: rotateY(180deg);
+}
+
+.card-rotate-main .sub-card .first .back,.card-rotate-main .sub-card .second .back,.card-rotate-main .sub-card .third .back,.card-rotate-main .sub-card .four .back,.card-rotate-main .sub-card .five .back,.card-rotate-main .sub-card .six .back,.card-rotate-main .sub-card .seven .back
+{
+    background-image: url(images/main-slider-01.jpg);
+    background-size: 100% 100%;
+}
+
+
+
+</style>
+<body>
+    <div class="card-rotate-main">
+        <div class="sub-card">
+            <div class="text">
+            <h2 style="color:rgb(174, 151, 117);">Modern <br> ideas <br>
+                <span style="color: black;">for home</span></h2>
+
+                <p>Vestibulum augue tortor, consequat eu <br>diam a, varius pulvinar ipsum. Vivamus <br> posuere, mauris eu interdum molestie.</p>
+                
+                <button>
+                    Read More ->
+                </button>
+
+            </div>
+
+
+            <div class="first">
+                <div class="front">
+                    <img src="images/icons8-bedroom-64 (1).png" alt="">
+                    <b>Bedrooms</b>
+                    <p>Vestibulum augue tortor, <br>consequat eu diam a, <br> varius pulvinar ipsum.</p>
+                </div>
+                 <div class="back">
+                    <img src="images/icons8-bedroom-64 (1).png" alt="">
+                    <b>Bedrooms</b>
+                    <p>Vestibulum augue tortor, <br>consequat eu diam a, <br> varius pulvinar ipsum.</p>
+                 </div>
+            </div>
+              
+            <div class="second">
+                <div class="front">
+                    <img src="images/icons8-kitchen-64.png" alt="">
+                    <b>Kitchens</b>
+                    <p> Duis ultricies sodales <br> finibus. In ac feugiat eros <br>luctus sem.</p>
+                </div>
+                <div class="back">
+                    <img src="images/icons8-kitchen-64.png" alt="">
+                    <b>Kitchens</b>
+                    <p> Duis ultricies sodales <br> finibus. In ac feugiat eros <br>luctus sem.</p>
+                </div>
+            </div>
+
+            <div class="third">
+                <div class="front">
+                    <img src="images/icons8-bedside-lamp-50.png" alt="">
+                    <b>Lightings</b>
+                    <p> Morbi orci mauris, lacinia <br>eu felis id, euismod <br> dapibus augue. Ante <br>ipsum primis.</p>
+                </div>
+                <div class="back">
+                    <img src="images/icons8-bedside-lamp-50.png" alt="">
+                    <b>Lightings</b>
+                    <p> Morbi orci mauris, lacinia <br>eu felis id, euismod <br> dapibus augue. Ante <br>ipsum primis.</p>
+                </div>
+            </div>
+               
+
+            <div class="four">
+                <div class="front">
+                    <img src="images/icons8-window-64.png" alt="">
+                    <b>Windows</b>
+                    <p>Vestibulum augue tortor, <br>consequat eu diam a, <br>varius pulvinar ipsum.</p>
+                </div>
+                <div class="back">
+                    <img src="images/icons8-window-64.png" alt="">
+                    <b>Windows</b>
+                    <p>Vestibulum augue tortor, <br>consequat eu diam a, <br>varius pulvinar ipsum.</p>
+                </div>
+            </div>
+              
+
+            <div class="five">
+                <div class="front">
+                    <img src="images/icons8-bathtub-80.png" alt="">
+                    <b>Bathrooms</b>
+                    <p>Duis ultricies sodales <br>finibus. In ac feugiat eros <br> luctus sem.</p>
+                </div>
+                <div class="back">
+                    <img src="images/icons8-bathtub-80.png" alt="">
+                    <b>Bathrooms</b>
+                    <p>Duis ultricies sodales <br>finibus. In ac feugiat eros <br> luctus sem.</p>
+                </div>
+            </div>
+            
+
+            <div class="six">
+                <div class="front">
+                    <img src="images/icons8-tree-64.png" alt="">
+                    <b>Decoration</b>
+                    <p>Morbi orci mauris, lacinia <br>eu felis id, euismod <br>dapibus augue. Ante <br>ipsum primis.</p>
+                </div>
+                <div class="back">
+                    <img src="images/icons8-tree-64.png" alt="">
+                    <b>Decoration</b>
+                    <p>Morbi orci mauris, lacinia <br>eu felis id, euismod <br>dapibus augue. Ante <br>ipsum primis.</p>
+                </div>
+            </div>
+               
+
+            <div class="seven">
+                <div class="front">
+                    <img src="images/icons8-fireplace-80.png" alt="">
+                    <b>Fireplaces</b>
+                    <p>Vestibulum augue tortor, <br>consequat eu diam a, <br>varius pulvinar ipsum.</p>
+                </div>
+               <div class="back">
+                <img src="images/icons8-fireplace-80.png" alt="">
+                <b>Fireplaces</b>
+                <p>Vestibulum augue tortor, <br>consequat eu diam a, <br>varius pulvinar ipsum.</p>
+            </div>
+               </div>
+            </div>
+              
+        </div>
+   </div>
+   
+</body>
+</html>
