@@ -709,68 +709,100 @@ button:hover::after{
         top: 0%;
 }
 
-.card-rotate-main .sub-card .first,.card-rotate-main .sub-card .second,.card-rotate-main .sub-card .third,.card-rotate-main .sub-card .four,.card-rotate-main .sub-card .five,.card-rotate-main .sub-card .six,.card-rotate-main .sub-card .seven
-{
-    border: 1px solid black;
-    height: 460px;
-    width: 23%;
-    background-color: white;
-    margin: 10px 10px 10px 10px;
+
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+.card-rotate-main .sub-card .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+
+
+  }
+  
+  .card-rotate-main .sub-card .flip-card-inner {
     position: relative;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: transform 0.5s ease;
-}
-
-.card-rotate-main .sub-card .first .front img,.card-rotate-main .sub-card .second .front img,.card-rotate-main .sub-card .third .front img,.card-rotate-main .sub-card .four .front img,.card-rotate-main .sub-card .five .front img,.card-rotate-main .sub-card .six .front img,.card-rotate-main .sub-card .seven .front img
-{
-    padding-top: 100px;
-    padding-left: 120px;
-}
-
-.card-rotate-main .sub-card .first .front b,.card-rotate-main .sub-card .second .front b,.card-rotate-main .sub-card .third .front b,.card-rotate-main .sub-card .four .front b,.card-rotate-main .sub-card .five .front b,.card-rotate-main .sub-card .six .front b,.card-rotate-main .sub-card .seven .front b
-{
-    font-size: 30px;
-    margin-left: 90px;   
-    margin-top: 90px; 
-}
-.card-rotate-main .sub-card .first .front p,.card-rotate-main .sub-card .second .front p,.card-rotate-main .sub-card .third .front p,.card-rotate-main .sub-card .four .front p,.card-rotate-main .sub-card .five .front p,.card-rotate-main .sub-card .six .front p,.card-rotate-main .sub-card .seven .front p
-{
+    width: 100%;
+    height: 100%;
     text-align: center;
-    margin-top: 30px; 
-
-}
-
-.card-rotate-main .sub-card .first:hover,.card-rotate-main .sub-card .second:hover,.card-rotate-main .sub-card .third:hover,.card-rotate-main .sub-card .four:hover,.card-rotate-main .sub-card .five:hover,.card-rotate-main .sub-card .six:hover,.card-rotate-main .sub-card .seven:hover
-{
-    background-color: rgba(0, 0, 0, 0.362);
-}
-
-.card-rotate-main .sub-card .first .back b,.card-rotate-main .sub-card .second .back b,.card-rotate-main .sub-card .third .back b,.card-rotate-main .sub-card .four .back b,.card-rotate-main .sub-card .five .back b,.card-rotate-main .sub-card .six .back b,.card-rotate-main .sub-card .seven .back b
-{
-    font-size: 30px;
-    margin-left: 90px;   
-    margin-top: 90px; 
-    color: white;
-}
-
-.card-rotate-main .sub-card .back p,.card-rotate-main .sub-card .second .back p,.card-rotate-main .sub-card .third .back p,.card-rotate-main .sub-card .four .back p,.card-rotate-main .sub-card .five .back p,.card-rotate-main .sub-card .six .back p,.card-rotate-main .sub-card .seven .back p
-{
-    text-align: center;
-    margin-top: 30px; 
-    color: white;
-}
-
-.card-rotate-main .sub-card .first:hover,.card-rotate-main .sub-card .second:hover,.card-rotate-main .sub-card .third:hover,.card-rotate-main .sub-card .four:hover,.card-rotate-main .sub-card .five:hover,.card-rotate-main .sub-card .six:hover,.card-rotate-main .sub-card .seven:hover
-{
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 50px 50px 50px 50px;
+  }
+  
+  .card-rotate-main .sub-card .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-}
-
-.card-rotate-main .sub-card .first .back,.card-rotate-main .sub-card .second .back,.card-rotate-main .sub-card .third .back,.card-rotate-main .sub-card .four .back,.card-rotate-main .sub-card .five .back,.card-rotate-main .sub-card .six .back,.card-rotate-main .sub-card .seven .back
-{
-    background-image: url(images/main-slider-01.jpg);
-    background-size: 100% 100%;
-}
+  }
+  
+  .card-rotate-main .sub-card .flip-card-front,.card-rotate-main .sub-card .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; 
+  }
+  
+  .card-rotate-main .sub-card .flip-card-front {
+  background-color: white;
+    color: black;
+  }
+  
+  .card-rotate-main .sub-card .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+    background-image: url(http://ollis.like-themes.com/wp-content/uploads/2018/02/main_HOVER.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+ 
+  .card-rotate-main .sub-card .flip-card-back::before{
+      content: " ";
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.549);
+      z-index: -1;
+  }
+   .part-1{
+      width: 100%;
+      height: 55%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .part-2{
+      height: 40%;
+      width: 100%;
+      height: 45%;
+  }
+   .title {
+     font-size: 25px;
+     margin: 22px;
+  }
+  .part-2 .content{
+      text-align: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  }
+  .part-2 .part-2-content {
+      width: 65%;
+      margin: auto;
+      margin-top: 0%;
+      line-height: 26px;
+  }
 
 
 
@@ -1331,57 +1363,54 @@ button:hover::after{
     display: flex;
     
 }
-.percentage-div .round1,.percentage-div .round2,.percentage-div .round3,.percentage-div .round4
-{
-    width: 25%;
-
+.percentage-div .skill-card {
+    display: flex;
+    width: 50%;
+    padding: 50px 0px;
+    border-radius: 8px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 100px;
 }
-
-.percentage-div .round1 .r1
-{
-      height: 220px;
-      width: 220px;
-      border-radius: 50%;
-      background: conic-gradient(rgb(0, 166, 142) 300deg, rgb(237, 237, 237) 0deg);
-      margin: auto;
-      margin-top: 150px;
-}
-.percentage-div .round2 .r2
-{
-    height: 220px;
-    width: 220px;
+.percentage-div .circular-progress-bar {
+    position: relative;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
-    background: conic-gradient(rgb(0, 166, 142) 260deg, rgb(237, 237, 237) 0deg);
-    margin: auto;
-    margin-top: 150px;
+    /* background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-.percentage-div .round3 .r3
-{
-    height: 220px;
-    width: 220px;
-    border-radius: 50%;
-    background: conic-gradient(rgb(0, 166, 142) 240deg, rgb(237, 237, 237) 0deg);
-    margin: auto;
-    margin-top: 150px;
+.percentage-div .circular-progress-bar::before {
+    content: "";
+    position: absolute;
+    height: 185px;
+    width: 185px;
+    border-radius: 59%;
+    background: url(../images/BG_fs.jpg)
 }
-
-.percentage-div .round4 .r4
-{
-    height: 220px;
-    width: 220px;
-    border-radius: 50%;
-    background: conic-gradient(rgb(0, 166, 142) 300deg, rgb(237, 237, 237) 0deg);
-    margin: auto;
-    margin-top: 150px;
+.percentage-div .skills-department span {
+    color: #B19777 ;
 }
-
-.percentage-div .round1,.percentage-div .round2,.percentage-div .round3,.percentage-div .round4
-{
+.percentage-div .progress-value {
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
     color: white;
-    font-size: 20px;
-    text-align: center;
 }
+.text {
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 25px;
+    color: white;
+}
+
+
+
+
+
 .team
 {
     height: 1000px;

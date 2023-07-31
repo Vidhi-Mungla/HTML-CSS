@@ -398,11 +398,17 @@
     width: 100%;
     display: inline;
 }
-.percentage-div .round1,.percentage-div .round2,.percentage-div .round3,.percentage-div .round4
-{
+.percentage-div .skill-card 
+    {
+        height: 390px;
     width: 100%;
 }
-
+.text {
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 50px;
+    color: black;
+}
 .team
 {
     height: 3100px;
