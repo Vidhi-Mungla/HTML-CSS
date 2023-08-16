@@ -9,7 +9,7 @@ let progress1 = setInterval(() => {
   progressStartValue1++;
 
   progressValue1.textContent = `${progressStartValue1}%`;
-  progressBar1.style.background = `conic-gradient(#00a68e ${progressStartValue1 * 3.6}deg, #ededed 0deg)`;
+  progressBar1.style.background = `conic-gradient(#B19777 ${progressStartValue1 * 3.6}deg, #ededed 0deg)`;
 
   if (progressStartValue1 == progressEndValue1) {
       clearInterval(progress1);
@@ -27,7 +27,7 @@ let progress2 = setInterval(() => {
   progressStartValue2++;
 
   progressValue2.textContent = `${progressStartValue2}%`;
-  progressBar2.style.background = `conic-gradient(#00a68e ${progressStartValue2 * 3.6}deg, #ededed 0deg)`;
+  progressBar2.style.background = `conic-gradient(#B19777 ${progressStartValue2 * 3.6}deg, #ededed 0deg)`;
 
   if (progressStartValue2 == progressEndValue2) {
       clearInterval(progress2);
@@ -45,7 +45,7 @@ let progress3 = setInterval(() => {
   progressStartValue3++;
 
   progressValue3.textContent = `${progressStartValue3}%`;
-  progressBar3.style.background = `conic-gradient(#00a68e ${progressStartValue3 * 3.6}deg, #ededed 0deg)`;
+  progressBar3.style.background = `conic-gradient(#B19777 ${progressStartValue3 * 3.6}deg, #ededed 0deg)`;
 
   if (progressStartValue3 == progressEndValue3) {
       clearInterval(progress3);
@@ -63,7 +63,7 @@ let progress4 = setInterval(() => {
   progressStartValue4++;
 
   progressValue4.textContent = `${progressStartValue4}%`;
-  progressBar4.style.background = `conic-gradient(#00a68e ${progressStartValue4 * 3.6}deg, #ededed 0deg)`;
+  progressBar4.style.background = `conic-gradient(#B19777 ${progressStartValue4 * 3.6}deg, #ededed 0deg)`;
 
   if (progressStartValue4 == progressEndValue4) {
       clearInterval(progress4);
