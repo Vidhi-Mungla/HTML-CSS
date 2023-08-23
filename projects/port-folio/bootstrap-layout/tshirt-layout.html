@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+
+   <style>
+      
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none !important;
+            color: black !important;
+        }
+.butn
+{
+    height: 50px;
+    width: 180px;
+    border-radius:25px;
+    border: 2px solid;
+    background-color: #a8d741;
+    transition: .5s;
+}
+
+.butn:hover
+{
+    transform: rotate(5deg)scale(1.1);
+    background-color: #f9f9f9;
+
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+.fa-chevron-right{
+    margin-left: 5px;
+    padding: 5px 10px;
+    background-color: black;
+    color:white;
+    border-radius: 50%;
+}
+
+.con{
+   background-color: #a8d741;
+}
+.bt{
+    background-color: black;
+    color: white;
+}
+.bt:hover{
+    color: black;
+}
+.row-bg
+{
+    align-items: center;
+    background: #a8d741;
+    padding: 128px 48px;
+    border-radius: 32px;
+
+}
+.font
+{
+    font-size: 80px;
+}
+.btn
+{
+    transition: .5s !important;
+    border-radius:500px !important;
+    border-color:white !important;
+    box-shadow: rgba(0,0,0,0.2)0px 2px 2px 0px;
+}
+.btn:hover
+{  
+    transform: rotate(7deg) scale(1.2);
+    background-color: #f9f9f9 !important;
+    color: black !important;
+    border-color:black !important;
+
+}
+
+.container
+{
+    border-radius: 32px;
+}
+
+.product-img
+{
+    border-radius: 32px;
+    transition: .5s;
+}
+
+.product-img:hover
+{
+    transform: rotate(-5deg)scale(1.1);
+}
+
+.info
+{
+    border-radius: 32px;
+    transition: .5s;
+}
+
+.info:hover
+{
+    transform: rotate(-5deg)scale(1.1);
+}
+
+span i
+{
+    color:#a8d741 !important;
+    font-size: 80px;
+}
+
+.row i
+{
+    color: black;
+}
+
+.xyz
+{
+   padding: 50px; 
+}
+
+.Buy
+{
+    transition: .5s;
+}
+
+.Buy:hover
+{
+    transform: rotate(7deg)scale(1.2);
+    background-color: #a8d741;
+}
+
+.view
+{
+    transition: .5s;
+    background-color: #a8d741;
+}
+
+.view:hover
+{
+    transform: rotate(7deg)scale(1.2);
+    background-color: #f9f9f9; 
+}
+.top
+{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.green
+{
+    border-radius: 32px;
+}
+
+.rounded-32
+{
+    border-radius: 20px;
+}
+
+.item
+{
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      overflow: hidden; 
+}
+
+.item-wrapper
+{
+  transition: 0.3s;
+}
+
+.item-wrapper:hover
+{
+    transform: rotate(-5deg)scale(1.1);
+}
+
+.img-div
+{
+  border-radius: 32px;
+}
+
+
+.con
+{
+  border-radius: 32px !important;
+}
+.b-icon
+{
+    color:black;
+}
+.icon-overlay 
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.youtube i
+{
+  color: #a8d741;
+}
+.youtube i:hover
+{
+  color:#446106
+}
+.text
+{
+  border-radius: 32px;
+}
+.text1 {
+  background-color: lightgray;
+     transition: transform 0.3s, box-shadow 0.3s;
+   }
+ 
+   .text1:hover {
+     transform: rotate(-2deg)scale(1.05); 
+     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2); 
+   }
+   
+.item-div
+{
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      overflow: hidden; 
+}
+    </style>
+</head>
+<body>
+ <nav>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-lg">
+          <a class="navbar-brand fs-1" href="#">ToolM5</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <p class="navbar-toggler-icon fs-1"><i class="fa-solid fa-bars pt-2"></i></p>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end text-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item fs-4 lh-lg">
+                <a class="nav-link active text-dark" aria-current="page" href="#">About us</a>
+              </li>
+              <li class="nav-item fs-4 lh-lg ms-2">
+                <a class="nav-link text-black" href="#">Services</a>
+              </li>
+              <li class="nav-item fs-4 lh-lg ms-2">
+                <a class="nav-link text-black" href="#">Contacts</a>
+              </li>
+              <li class="nav-item fs-4 lh-lg ms-2">
+                <a class="nav-link text-black" href="#">
+                  <div><i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-twitter ps-4"></i><i
+                      class="fa-brands fa-instagram ps-4"></i></div>
+                </a>
+              </li>
+              <li class="nav-item fs-5 ms-2">
+                <a class="nav-link" href="#"><button class="butn shadow">Get Started <i class="fa-solid fa-circle-chevron-right fs-2 ps-3 pb-2"></i>
+                  </button></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+      <!-- header close -->
+
+      <!-- container-div start -->
+      <div class="container">
+       
+        <div class="row row-bg justify-content-center my-5">
+            <div class="col-12 col-md-12 col-lg-8">
+                <div class="text-wrapper">
+                    <h1 class="mb-4 text-center">Create your</h1>
+                    <p class="text-center fw-bold font fw-bold">T-Shirt Design</p>
+
+                    <div class=" mt-4 text-center"><a class="btn btn-lg btn-black bg-dark text-white mb-5" href="https://mobiri.se">Get Started</a></div>
+
+
+                    <p class="text-center fs-5"><strong><u>View how it works</u>
+                    </strong></p>
+    
+                    <p class="text-center fs-5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+    
+
+      </div>
+
+      <!-- container-div end -->
+
+      <!-- features div start -->
+
+  <div class="container xyz">
+    <p class="border-top border-dark fw-bold fs-4 pt-2">Our features</p>
+
+     <div class="row justify-content-center">
+            <div class="col-xl-3 col-lg-4 col-md-6 d-flex justify-content-center text-center my-5"> 
+               <div class="row">
+                <div class="col-xl-4 icon">
+                    <span><i class="fa-solid fa-palette"></i></span>
+                  </div>
+                  <div class="col-xl-8 text fs-5">
+                    <strong>Unique Design</strong>
+                    <p class="text-black-50">Jul 13 2025</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 d-flex justify-content-center text-center my-5"> 
+                <div class="row">
+                 <div class="col-xl-4 icon">
+                     <span><i class="fa-solid fa-layer-group"></i></span>
+                   </div>
+                   <div class="col-xl-8 text fs-5">
+                     <strong>Quality Materials</strong>
+                     <p class="text-black-50">Jul 15 2025</p>
+                   </div>
+                </div>
+             </div>
+             <div class="col-xl-3 col-lg-4 col-md-6 d-flex justify-content-center text-center my-5 "> 
+                <div class="row">
+                 <div class="col-xl-4 icon">
+                     <span><i class="fa-solid fa-shirt"></i></span>
+                   </div>
+                   <div class="col-xl-8 text fs-5">
+                     <strong>High Print Quality</strong>
+                     <p class="text-black-50">Jul 23 2025</p>
+                   </div>
+                </div>
+             </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 d-flex justify-content-center text-center my-5"> 
+                <div class="row">
+                 <div class="col-xl-4 icon">
+                     <span><i class="fa-regular fa-face-smile"></i></span>
+                   </div>
+                   <div class="col-xl-8 text fs-5">
+                     <strong>Good Reviews</strong>
+                     <p class="text-black-50">Jul 27 2025</p> 
+                  
+                   </div>
+                </div>
+             </div>
+        
+    </div>
+
+ </div>
+
+      
+
+      <!-- features div end -->
+
+
+<!-- info-div start -->
+    <div class="container bg-dark p-3 mt-5 my-5">
+        <div class="container">
+            <p class="text-white fs-1 col-12 p-2 ps-5">How it works?</p>
+           <div class="container">
+            <div class="product-info row  gap-4  justify-content-around">
+
+                <div class="product-img p-4 mb-5 bg-white col-xl-5">
+                    <img src="https://mobirise.com/extensions/toolm5/t-shirt-design/assets/images/mbr.jpeg" alt="" height="400px" width="100%">
+                    <p class="fs-1">Unique T-Shirt</p>
+                    <div class="justify-content-between d-flex">
+                        <button class="Buy px-4 py-2 rounded-pill border-dark">Buy for $59</button>
+                        <button class="view px-4 py-2 rounded-pill border-dark">View All  <i class="fa-solid fa-circle-chevron-right fs-2 ps-3 pb-2"></i></button>
+                    </div>
+                </div>
+
+                
+                <div class="info p-5 bg-white  mb-5 col-xl-5">
+                    <p class=" border-bottom border-dark pb-3 fs-5">Unique T-Shirt Design</p>
+                    <p class="fs-4 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id orci nec lectus lacinia tempus. Praesent nec quam mollis turpis eleifend consequat.</p>
+                    <p class="fs-4">Phasellus euismod maximus ipsum vehicula vehicula. Mauris posuere risus nec purus dapibus semper sed id ligula. Integer massa lorem, fringilla vel eros.</p>
+                    <div class="justify-content-between d-flex">
+                        <button class="Buy px-4 py-2 rounded-pill border-dark">Subdcribe $79/q</button>
+                        <button class="view px-4 py-2 rounded-pill border-dark">More info  <i class="fa-solid fa-circle-chevron-right fs-2 ps-3 pb-2"></i></button>
+                    </div>
+                </div>
+
+            </div>
+           </div>
+        </div>
+
+    </div> 
+<!-- info-div end -->
+
+<!-- Aboutus start -->
+<div class="container top">
+    <div class="row mt-5 mb-5">
+        <div class="col-xl-5 border-end border-dark">
+            <h1 class="fs-1 text-center">About us</h1>
+        </div>
+        <div class="col-xl-5">
+            <p class="text-black-50 fs-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris felis elit, faucibus at tincidunt vel, ultrices vitae mauris. Pellentesque nec ante nisi. Praesent posuere dignissim nibh in finibus. Nunc rutrum nibh pellentesque, viverra dolor quis, sollicitudin libero. Duis non elit feugiat maximus.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Aboutus end -->
+
+<!-- proffessional tool start -->
+<section>
+
+
+    <div class="container-lg mt-2">
+      <div class=" pb-4">
+        <h3 class=" align-left mb-0 ">Professional Tools</h3>
+
+      </div>
+      <div class="green row con p-3">
+        <div class=" col-12 col-md-6 col-lg-4 p-4 p-md-4 p-sm-5">
+          <div class="  item-wrapper bg-white col-12 pb-3  rounded-32">
+            <div class="item">
+              <img src="https://mobirise.com/extensions/toolm5/t-shirt-design/assets/images/mbr.jpg" alt="" height="100%" width="100%">
+            </div>
+            <div class="item-content">
+              <h6 class=" align-left mt-5 fs-5 ps-3"><strong>Quality Materials</strong></h6>
+              <h5 class=" align-left mb-2 pb-3 border-bottom ps-3 border-dark  ">Lorem ipsum dolor sit amet</h5>
+              <p class="align-left mt-3 mb-0 ps-3"><a href="#" class="text-black border-bottom border-dark">Read More &gt;</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class=" col-12 col-md-6 col-lg-4 p-4 p-md-4 p-sm-5">
+          <div class=" item-wrapper bg-white pb-3  rounded-32">
+            <div class="item">
+              <img src="https://mobirise.com/extensions/toolm5/t-shirt-design/assets/images/mbr-1.jpg" alt="" height="260px" width="100%">
+            </div>
+            <div class="item-content">
+              <h6 class=" align-left mt-5 fs-5 ps-3"><strong>Quality Materials</strong></h6>
+              <h5 class=" align-left mb-2 pb-3 border-bottom border-dark ps-3 ">Lorem ipsum dolor sit amet</h5>
+              <p class="align-left mt-3 mb-0 ps-3"><a href="#" class="text-black border-bottom border-dark">Read More &gt;</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class=" col-12 col-md-6 col-lg-4 p-4 p-md-4 p-sm-5 ">
+          <div class= "item-wrapper bg-white pb-3 rounded-32">
+            <div class="item">
+              <img src="https://mobirise.com/extensions/toolm5/t-shirt-design/assets/images/mbr.jpeg" alt="" height="260px" width="100%">
+            </div>
+            <div class="item-content">
+              <h6 class=" align-left mt-5 fs-5 ps-3"><strong>Quality Materials</strong></h6>
+              <h5 class=" align-left mb-2 pb-3 border-bottom border-dark ps-3 ">Lorem ipsum dolor sit amet</h5>
+              <p class="align-left mt-3 mb-0 ps-3"><a href="#" class="text-black border-bottom border-dark">Read More &gt;</a></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+<!-- proffessional tool end -->
+
+<!-- shop div start -->
+<section>
+
+    <div class="container m-5 p-5">
+      <div class="row justify-content-center">
+        <div class=" col-md-12 col-lg-9 col">
+
+          <h3 class="mb-5 display-5 text-center ">
+            Our Shop</h3>
+          <p class=" fs-5 col-xl-12 text-black-50 text-center align-left">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla suscipit orci eu
+            pellentesque. Nullam consectetur dolor vel ex ullamcorper, non viverra neque aliquet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- shop div end -->
+  
+
+
+
+  <div class="container text1 my-5">
+    <div class="row">
+      <div class="col-xl-5">
+        <img src="https://mobirise.com/extensions/toolm5/t-shirt-design/assets/images/mbr-1.jpg" alt="" height="100%" width="100%" class="item-div">
+      </div>
+      <div class=" col-xl-7 d-flex align-items-center">
+        <div class="row">
+          <div class="col-md ">
+              <div class="">
+                  <h6 class="display-5">T-shirt with Slogan</h6>
+                  <p class="fs-5 text-black-50">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies metus
+                      et nibh gravida, eu imperdiet ante egestas. Duis ornare lobortis ante, eget
+                      eleifend sapien dictum ut. Vestibulum ante ipsum primis in faucibus orci luctus
+                      et ultrices.</p>
+              </div>
+             
+          </div>
+          <div class="col-md-auto">
+              <p class="display-2">$49</p>
+              <a class="nav-link" href="#"><button class="butn shadow">Buy Now <i class="fa-solid fa-circle-chevron-right fs-2 ps-3 pb-2"></i>
+              </button></a>
+          </div>
+          <div>
+      </div>
+        </div>
+      </div>
+   </div>
+  </div>
+
+
+  
+  <div class="container text1 my-5">
+    <div class="row">
+      <div class="col-xl-5">
+        <img src="https://mobirise.com/extensions/toolm5/t-shirt-design/assets/images/mbr.jpeg" alt="" height="100%" width="100%" class="item-div">
+      </div>
+      <div class=" col-xl-7 d-flex align-items-center">
+        <div class="row">
+          <div class="col-md ">
+              <div class="">
+                  <h6 class="display-5">T-shirt with Slogan</h6>
+                  <p class="fs-5 text-black-50">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies metus
+                      et nibh gravida, eu imperdiet ante egestas. Duis ornare lobortis ante, eget
+                      eleifend sapien dictum ut. Vestibulum ante ipsum primis in faucibus orci luctus
+                      et ultrices.</p>
+              </div>
+             
+          </div>
+          <div class="col-md-auto">
+              <p class="display-2">$49</p>
+              <a class="nav-link" href="#"><button class="butn shadow">Buy Now <i class="fa-solid fa-circle-chevron-right fs-2 ps-3 pb-2"></i>
+              </button></a>
+          </div>
+          <div>
+      </div>
+        </div>
+      </div>
+   </div>
+  </div>
+
+
+
+
+
+
+ <section>
+    <div class="container-lg mt-2">
+      <div class=" pb-4">
+        <h3 class=" align-left mb-0 ">Our Team</h3>
+        <p class="text-black-50 fs-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+      </div>
+      <div class="green row con p-3">
+        <div class=" col-12 col-md-6 col-lg-4 p-4 p-md-4 p-sm-5">
+          <div class="  item-wrapper bg-white col-12  rounded-32">
+            <div class="item">
+              <img src="https://mobirise.com/extensions/toolm5/t-shirt-design/assets/images/team1.jpg" alt="" height="260px" width="100%">
+            </div>
+            <div class="item-content">
+              <h6 class=" align-left mt-5 fs-5 ps-3"><strong>Jessica Swift</strong></h6>
+              <h5 class=" align-left mb-2 pb-3 ps-3 text-black-50 ">Manager</h5>
+              <p class="fs-5 ps-3 ">Lorem ipsum dolor sit amet, consectet adipiscing elit.</p>
+              <li class="nav-item fs-5 ms-2">
+                <a class="nav-link" href="#"><button class="butn shadow">Get Started <i class="fa-solid fa-circle-chevron-right fs-2 ps-3 pb-2"></i>
+                  </button></a>
+              </li>
+            </div>
+          </div>
+        </div>
+
+        <div class=" col-12 col-md-6 col-lg-4 p-4 p-md-4 p-sm-5">
+          <div class=" item-wrapper bg-white  rounded-32">
+            <div class="item">
+              <img src="https://mobirise.com/extensions/toolm5/t-shirt-design/assets/images/team2.jpg" alt="" height="260px" width="100%">
+            </div>
+            <div class="item-content">
+                <h6 class=" align-left mt-5 fs-5 ps-3"><strong>Ben Palmer</strong></h6>
+                <h5 class=" align-left mb-2 pb-3 ps-3 text-black-50 ">Designer</h5>
+                <p class="fs-5 ps-3 ">Lorem ipsum dolor sit amet, consectet adipiscing elit.</p>
+                <li class="nav-item fs-5 ms-2">
+                  <a class="nav-link" href="#"><button class="butn shadow">Get Started <i class="fa-solid fa-circle-chevron-right fs-2 ps-3 pb-2"></i>
+                    </button></a>
+                </li>
+              </div>
+            </div>
+          </div>
+
+        <div class=" col-12 col-md-6 col-lg-4 p-4 p-md-4 p-sm-5 ">
+          <div class= "item-wrapper bg-white  rounded-32">
+            <div class="item">
+              <img src="https://mobirise.com/extensions/toolm5/t-shirt-design/assets/images/team3.jpg" alt="" height="260px" width="100%">
+            </div>
+            <div class="item-content">
+                <h6 class=" align-left mt-5 fs-5 ps-3"><strong>Adam Brown</strong></h6>
+                <h5 class=" align-left mb-2 pb-3 ps-3 text-black-50 ">Devloper</h5>
+                <p class="fs-5 ps-3 ">Lorem ipsum dolor sit amet, consectet adipiscing elit.</p>
+                <li class="nav-item fs-5 ms-2 ">
+                  <a class="nav-link " href="#"><button class="butn shadow">Get Started <i class="fa-solid fa-circle-chevron-right fs-2 ps-3 pb-2"></i>
+                    </button></a>
+                </li>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  
+   <div class="container-fluid mt-5 mb-5">
+    <div class="container con text-center">
+        <h1 class="text-white p-5 display-2 ">View in Action</h1>
+        <div class="rounded rounded-3 d-flex flex-column align-items-center justify-content-center position-relative">
+            <img class="m-auto pb-5" src="https://mobirise.com/extensions/toolm5/t-shirt-design/assets/images/mbr-2.jpeg" alt="" height="70%" width="70%">
+            <a href="https://youtu.be/PivzLLqDZac" class="text-decoration-none icon-overlay">
+              <div class="youtube display-8">
+                <i class="fab fa-youtube fa-5x"></i>
+              </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+ <section>
+    <div class="container bg-light m-auto d-flex justify-content-evenly gap-4 row text-center">
+      <div class="text1 text  col-xl-3 p-5">
+        <img src="https://mobirise.com/extensions/toolm5/t-shirt-design/assets/images/1.png" alt="" height="100px" width="150px" class="my-4">
+        <h1>Our partner</h1>
+        <p class="text-black-50 fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla suscipit.</p>
+        <button class="view px-4 py-2 rounded-pill border-dark">Learn More</button>
+      </div>
+      <div class="text1 text col-xl-3 p-5">
+        <img src="https://mobirise.com/extensions/toolm5/t-shirt-design/assets/images/2.png" alt="" height="100px" width="150px" class="my-4">
+        <h1>Our partner</h1>
+        <p class="text-black-50 fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla suscipit.</p>
+        <button class="view px-4 py-2 rounded-pill border-dark">Learn More</button>
+      </div>
+      <div class="text1 text col-xl-3 p-5">
+        <img src="https://mobirise.com/extensions/toolm5/t-shirt-design/assets/images/3.png" alt="" height="100px" width="150px" class="my-4">
+        <h1>Our partner</h1>
+        <p class="text-black-50 fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla suscipit.</p>
+        <button class="view px-4 py-2 rounded-pill border-dark">Learn More</button>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+<section>
+  <div class="text1 container my-5 row d-flex m-auto justify-content-center align-items-center">
+
+    <div class="left col-xl-6 p-5 fs-5">
+    <i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu accumsan diam, elementum maximus arcu. Lobortise est ut blandit facilisis, est quam dictum dolor, sed mollis augue. In elementum maximus tempus. Suspendisse augue eget massa vestibulum hendrerit purus."</i><br><br>
+     <b>Steven Jason</b><br>
+     <p>Client</p>
+      <a class="nav-link " href="#"><button class="butn shadow fs-6">Read Full Review<i class="fa-solid fa-circle-chevron-right fs-2 ps-3 pb-2"></i></button></a>
+  </div>
+
+    <div class="right  col-12  col-md-12 col-xl-6">
+      <img src="https://mobirise.com/extensions/toolm5/t-shirt-design/assets/images/team3.jpg" alt="" class="my-5 img-thumbnail">
+    </div>
+
+  </div>
+</section> 
+
+
+ 
+ <section>
+   <div class="container bg-light">
+     <div class="text text-center">
+       <h1 class="display-2">Contacts</h1>
+       <p class="text-black-50 fs-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+     </div>
+   </div>
+   <div class="container bg-light m-auto d-flex row text-center">
+     <div class="text1 text m-auto col-xl-5 p-5 my-5">
+       <b class="a text-black display-2"><i class="fa-regular fa-envelope"></i></b><br><br>
+       <h1>Email</h1>
+       <p class="text-black-50 fs-5">We will reply as soon as possible</p>
+       <b class="fs-5"> Send us an email</b>
+     </div>
+     <div class="text1 text m-auto col-xl-5 p-5 my-5">
+       <b class="a text-black display-2"><i class="fa-solid fa-mobile-screen-button"></i></b><br><br>
+       <h1>Phone</h1>
+       <p class="text-black-50 fs-5">Mon - Fri 09:00 - 18:00</p>
+       <b class="fs-5"> Call (800) 123 45 67</b>
+     </div>
+   </div>
+ </section>
+
+ 
+
+
+
+  <section>
+
+    <div class="con1 container mt-5 p-5">
+      <div class="mbr-section-head">
+        <h3 class="text-center fw-semibold display-5">Send Message</h3>
+
+      </div>
+      <div class="row justify-content-center mt-4">
+        <div class="col-lg-8 mx-auto p-5 con rounded-5" data-form-type="formoid">
+          <!--Formbuilder Form-->
+          <form action="#" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name">
+            <input type="hidden" name="email" data-form-email="true"value="abc">
+
+            <div class="row">
+              <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
+              <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">Oops...! some problem!</div>
+            </div>
+
+            <div class="dragArea row">
+              <div class="col-md col-sm-12 form-group mb-3" data-for="name">
+                <input type="text" name="name" placeholder="Name" data-form-field="name" class="form-control display-7"value="" id="name-form01-7">
+              </div>
+
+              <div class="col-md col-sm-12 form-group mb-3" data-for="email">
+                <input type="email" name="email" placeholder="E-mail" data-form-field="email"class="form-control display-7" value="" id="email-form01-7">
+              </div>
+
+              <div data-for="url" class="col-12 form-group mb-3">
+                <input type="url" name="url" placeholder="Your Site" data-form-field="url" class="form-control display-7" value="" id="url-form01-7">
+              </div>
+
+              <div data-for="textarea" class="col-12 form-group mb-3">
+                <textarea name="textarea" placeholder="Message" data-form-field="textarea"class="form-control display-7" id="textarea-form01-7"></textarea>
+              </div>
+
+              <li class="nav-item fs-5 ms-2 text-center">
+                <a class="nav-link" href="#"><button class="butn shadow">Send Message</button></a>
+              </li>
+
+            </div>
+          </form>
+          <!--Formbuilder Form-->
+        </div>
+      </div>
+    </div>
+  
+  <div class="container-fluid">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.9039239860003!2d72.55854851480088!3d23.02729958495066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84fa08cd4e4b%3A0x1a4593ed88b2e66c!2sLaw%20Garden!5e0!3m2!1sen!2sin!4v1676478712332!5m2!1sen!2sin"
+      width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+
+
+  <div class="container-fluid bg-dark py-4">
+    <div>
+      <p class="text-center text-white fw-bold">© Copyright 2025 Mobirise - All Rights Reserved </p>
+    </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
