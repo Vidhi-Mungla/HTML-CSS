@@ -1,0 +1,740 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body *{ box-sizing: border-box;}
+
+.maintamplate
+{
+    height: 100px;
+    width: 100px;
+    border: 2px solid #B19777;
+    position: fixed;
+    font-size: 20px;
+    bottom: 50px;
+    right: 50px;
+    color: #B19777;
+    text-align: center;
+    padding-top: 20px;
+}
+.banner
+{
+    height:1400px;
+    width: 100%;
+    background-image: url('../images/banner-bg.webp');  
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.banner b
+{
+    font-size: 25px;
+    position: absolute;
+    top: 470px;
+    left: 490px;
+    line-height: 50px;
+    
+}
+.ollis
+{
+    height: 50px;
+    width: 100px;
+    background-color: black;
+    position: absolute;
+    top: 400px;
+    left: 500px;
+    
+}
+
+.border
+{
+    height: 2px;
+    width: 70px;
+    background-color:#B19777;
+    position: absolute;
+    top: 495px;
+    left: 400px;
+    
+}
+
+.multi-plugins
+{
+    height: 50px;
+    width: 400px;
+    background-image: url('../images/multi-plugins.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 600px;
+    left: 500px;
+    
+}
+
+.banner .img1 img
+{   
+    position: absolute;
+    top: -3;
+    left: 20%;
+}
+.banner .img2 img
+{
+    position: absolute;
+    top: 0px;
+    left: 60%;
+}
+
+.banner .img3 img
+{  
+    position: absolute;
+    top: 10%;
+    left: 80%;
+ }
+
+.banner .img4 img
+{   
+    position: absolute;
+    top: 50%;
+    left: 90%; 
+}
+
+.banner .img5 img
+{
+    position: absolute;
+    top: 60%;
+    left: 65%;
+}
+
+.banner .img6 img
+{
+    position: absolute;
+    top: 50%;
+    left: 35%; 
+}
+
+.banner .img7 img
+{    
+    position: absolute;
+    top: 50%;
+    left: 15%; 
+}
+
+.banner .img8 img
+{   
+    position: absolute;
+    top: 70%;
+    left: -3%;
+}
+
+.banner .img9 img
+{  
+    position: absolute;
+    top: 30%;
+    left: -3%;
+}
+
+.banner .img10 img
+{ 
+    position: absolute;
+    top: 5%;
+    left: -5%;
+}
+
+.design
+{
+    height: auto;
+    width: 100%;
+    background-color: white;   
+}
+
+.icon-row
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.icon-row .icons
+{
+    width: 33.33%;
+    height: 283px;
+    text-align: center;
+}
+.icon-row .icons .icons-img
+{
+    width: 100%;
+    height: 60%;
+    margin-top: 100px;
+}
+.icon-row .icons .icons-img img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.icon-row .icons .img-title
+{
+    width: 100%;
+    height: 40%;
+    font-size: 30px;
+}
+
+.icon-row img
+{
+   object-fit: contain;
+}
+
+
+.main
+{
+    height: 100%;
+    width: 100%;
+    background-color:white;
+}
+.main .text
+{
+    height: 400px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    line-height: 60px;
+    padding-top: 200px;
+}
+
+
+.main .scroll-img .first-part
+{
+display: flex;
+/* flex-wrap: wrap; */
+}
+
+.main .scroll-img
+{
+   
+}
+
+.main .scroll-img .first-part .img,.main .scroll-img .second-part .img
+{
+    height: 900px;
+    /* border: 2px solid; */
+    width: 33.33%;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    margin: 35px;
+}
+
+.main .scroll-img .first-part .div1
+{
+    background: url(../images/4.jpg);
+    background-size: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main .scroll-img .first-part .div2
+{
+    background: url(../images/1.jpg);
+    background-size: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main .scroll-img .first-part .div3
+{
+    background: url(../images/3.jpg);
+    background-size: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.main .scroll-img .second-part
+{
+display: flex;
+}
+.main .scroll-img .second-part .div4
+{
+    background: url(../images/5.jpg);
+    background-size: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.main .scroll-img .second-part .div5
+{
+    background: url(../images/2.jpg);
+    background-size: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:0 45px 150px 45px;
+
+}
+.main .scroll-img .second-part .div6
+{
+    background: url(../images/6.jpg);
+    background-size: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.main .scroll-img .third-part
+{
+display: flex;
+}
+.main .scroll-img .third-part .img
+{
+    height: 700px;
+    width: 33.33%;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.main .scroll-img .third-part .div7
+{
+    background: url(../images/img7.png);
+    background-size: 100% 100%;
+    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.main .scroll-img .third-part .div8
+{
+    background: url(../images/8.jpg);
+    background-size: 100% 100%;
+    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin:0 45px 150px 45px;
+
+}
+.main .scroll-img .third-part .div9
+{
+    background: url(../images/7.jpg);
+    background-size: 100% 100%;
+    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.main .scroll-img .img a
+{
+   text-decoration: none;
+   color: black;
+   font-size: 35px;
+   font-weight: bold;
+   padding: 0px 60px ;
+   line-height:1900px;
+   
+}
+
+.main .scroll-img .a1 a
+{
+   text-decoration: none;
+   color: black;
+   font-size: 35px;
+   font-weight: bold;
+   padding: 0px 50px ;
+   line-height:1500px;
+}
+
+
+.theme
+{
+  height: 1200px;
+  width: 100%;
+  background-image: url('../images/BG_fs.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.theme .features-box
+{
+    height: 250px;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    line-height: 250px;
+}
+
+
+
+.theme .circle 
+{
+    height: 950px;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.theme .circle .left 
+{
+    height: 950px;
+    width: 50%;
+}
+.theme .circle .left .first
+{
+    height: 237px;
+    display: flex;
+}
+.theme .circle .left .first .left1
+{
+    height: 237px;
+    width: 30%;
+    padding-top: 70px;
+
+}
+.theme .circle .left .first .right1
+{
+    height: 237px;
+    width: 70%;
+    padding-top: 100px;
+
+}
+.theme .circle .left .first .right1 b
+{
+    font-size: 30px;
+    color: white;
+}
+.theme .circle .right
+{ 
+    height: 950px;
+    width: 50%;
+}
+.theme .circle .right .second 
+{
+    height: 237px;
+    display: flex;
+
+}
+.theme .circle .right .second .left1
+{
+    height: 237px;
+    width: 30%;
+    padding-top: 70px;
+
+}
+.theme .circle .right .second .right1
+{
+    height: 237px;
+    width: 70%;
+    padding-top: 100px;
+}
+
+.theme .circle .right .second .right1 b
+{
+    font-size: 30px;
+    color: white;
+    
+}
+.theme .circle .left .first .left1 .y
+{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #B19777;
+    margin: auto;
+    position: relative;
+}
+.theme .circle .left .first .left1 .y i
+{
+    color:white;
+    font-size: 40px;
+    position: absolute;
+    top: 33px;
+    left: 33px;
+
+}
+
+
+.theme .circle .right .second .left1 .y
+{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #B19777;
+    margin: auto;
+    position: relative;
+    
+
+}
+
+.theme .circle .right .second .left1 .y i
+{
+    color:white;
+    font-size: 40px;
+    position: absolute;
+    top: 33px;
+    left: 33px;
+}
+
+.premium
+{
+    height: 800px;
+    width: 100%;
+    background-color: white;
+
+}
+.premium .text2
+{
+    height: 300px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 100px;
+}
+
+.premium .roundimg
+{
+height: 700px; 
+padding-left: 130px;
+margin-bottom: 200px;
+}
+
+.premium .twodiv
+{
+ height: 400px;
+ width: 100%;
+ display: flex;
+}  
+
+.twodiv .skin
+{
+ height: 400px;
+ width: 50%;
+ background-color:#B19777 ;
+ position: relative;
+}
+.twodiv .skin b
+{
+    font-size: 50px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+ 
+.twodiv .skin span
+{
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+}
+.twodiv .skin .arrow
+{
+    height: 100px;
+    width: 100px;
+    background-color:black;
+    border-radius: 50%;
+    position: absolute;
+    top: 120px;
+    left: 540px;
+}
+
+.twodiv .skin .arrow i
+{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 33px;
+    left: 40px; 
+
+}
+
+.twodiv .black
+{
+
+ height: 400px;
+ width: 50%;
+ background-color: black;
+ position: relative;
+     
+}
+
+.twodiv .black .play-btn
+{
+    height: 100px;
+    width: 100px;
+    background-color: #B19777;
+    border-radius: 50%;
+    margin: 120px 0px 0px 60px;
+}
+.twodiv .black .play-btn i
+{
+    font-size: 40px;
+    color: white;
+    padding: 30px 35px;
+}
+
+.twodiv .black b
+{
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+.twodiv .black span
+{
+    font-size: 25px;
+    color:#B19777;
+    position: absolute;
+    top: 130px;
+    left: 0px;
+}
+
+.multicolor
+{
+height: 900px;
+width: 100%;
+}
+
+.multicolor .text3 
+{
+    height: 300px;
+    width: 80%;
+    font-size: 25px;
+    margin: auto;
+    text-align: center;
+    line-height: 60px;
+    padding-top: 100px;
+    letter-spacing: 2px;
+  
+}
+.color
+{
+    height: 700px;
+    width: 100%;
+    
+}
+
+.multicolor .color img
+{
+    padding-top: 100px;
+    padding-left: 700px;
+   
+}
+
+.multicolor .text3 span
+{
+color:#B19777;
+font-size:50px;
+}
+
+.browser
+{
+    height: 1250px;
+    width: 100%;
+    background-color: black;
+    border: 2px solid white;
+    position: relative;
+}
+
+.browser .text4 
+{
+    height: 300px;
+    width: 80%;
+    background-color: black;
+    color: white;
+    margin: auto;
+    text-align: center;
+    line-height: 50px;
+    padding-top: 100px;
+}
+
+.browser .text4 b
+{
+    font-size: 55px;
+
+}
+.browser .text4 p
+{
+    font-size: 25px;
+
+}
+
+.browser .multiimg
+{
+    height: 130px;
+    width: 100%;
+    background-image: url('../images/multi-browsers.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    position: absolute;
+    top: 400px;
+    left:320px;    
+}
+
+.browser .lpimg
+{
+height: 600px;
+width: 80%;
+background-image: url('../images/browsers-preview.png');
+background-repeat: no-repeat;
+background-size: cover;
+position: absolute;
+top: 600px;
+left: 180px;
+
+}
+
+.innerpage
+{
+    height: 800px;
+    width: 100%;
+    background-image: url(../images/multi-left-1.png),url(../images/multi-right-1.png);
+    background-size: 45% 230%,50% 220%;
+    background-repeat: no-repeat,no-repeat;
+    background-position: 0 0,110% 1%;
+    
+
+    text-align: center;
+    padding-top: 230px;
+}
+
+.innerpage h1
+{
+    font-size: 200px;
+}
+
+.innerpage b
+{
+    font-size: 50px;
+}
+
+.document
+{
+    height: 300px;
+    width: 100%;
+    background-color: #B19777;
+    text-align: center;
+    padding-top: 100px;
+    padding-right: 300px;
+    position: relative;
+
+}
+
+.document b
+{
+    font-size: 40px;
+    position: absolute;
+    top: 100px;
+    left: 730px;
+}
+
+.footer
+{
+    height: 100px;
+    width: 100%;
+    background-color:black;
+    color: #B19777;
+    text-align: center;
+    line-height: 100px;
+    font-size: 25px;
+}

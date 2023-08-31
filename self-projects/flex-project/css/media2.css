@@ -1,0 +1,33 @@
+@media(max-width:500px)
+{
+.icon-row .icons{
+  width: 50%;
+}
+   .main .text{
+    font-size: 17px;
+   }
+.main .scroll-img .first-part,.main .scroll-img .second-part{
+    flex-wrap: wrap;
+}
+
+.main .scroll-img .first-part .img,.main .scroll-img .second-part .img{
+    margin: 0%;
+    width: 100%;
+    margin: 50px 10px 50px 10px;
+}
+ 
+
+.main .scroll-img .third-part
+{
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+.main .scroll-img .third-part .img
+{
+    margin: 0%;
+    width: 100%;
+    margin: 50px 10px 50px 10px; 
+}
+
+}
