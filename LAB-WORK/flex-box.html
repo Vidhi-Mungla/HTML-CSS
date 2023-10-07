@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{box-sizing: border-box;}
+
+        *{
+            box-sizing: border-box;
+        }
+
         .main 
-        {
-          
+        {        
             background: gray;
             display: flex;
             flex-wrap: wrap;
         }
+
         .main .x 
         {
             height: 200px;
@@ -21,6 +25,7 @@
             /* width: 25%; */
             flex-grow: 1;
         }
+
         .main .x img
         {
             object-fit: contain;
@@ -33,6 +38,7 @@
             background-repeat: no-repeat;
             background-position: center;
         }
+
     </style>
 </head>
 <body>
@@ -40,10 +46,7 @@
     <div class="main">
         <div class="x">1</div>
         <div class="x">2</div>
-        <div class="x">
-            <img src="m7.jpg" alt="" height="100%" 
-            width="100%">
-        </div>
+        <div class="x"><img src="m7.jpg" alt="" height="100%" width="100%"></div>
         <div class="x bg">4</div>     
     </div>
     
