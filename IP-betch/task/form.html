@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <td>Name:</td>
+        <td><input type="text" name="nm" placeholder="Enter Name ..." pattern="[A-Za-z]{1,10}" title="Only characters allowed, 1 to 10 characters" required></td> <br><br>
+
+        <tr>
+            <td>Email:</td>
+            <td>
+                <input type="text" name="email" required pattern="[A-Za-z]+@gmail.com">
+            </td>
+        </tr> <br><br>
+        
+    
+        <tr>
+            <div>
+                <label for="psw">Password:</label>
+                <input type="password" id="psw" name="psw" pattern="^\d{6}$" title="Password must be 6 digits long" required>
+            </div>
+            
+            
+    
+        <tr> <td>Language:</td><td><input type="checkbox">Hindi
+            <input type="checkbox">Gujarati
+            <input type="checkbox">English</td></tr> <br> <br>
+    
+        <tr><td>BOD:</td><td><input type="datetime-local"></td></tr> <br><br>
+    
+        Address:
+        <br>
+        <textarea cols="80" rows="5" value="address"></textarea>
+        <br><br>
+    
+        <lable>Gender:</lable>
+    <br>
+    <input type="radio" name="abc"/>male<br>
+    <input type="radio" name="abc"/>female<br>
+    <input type="radio" name="abc"/>other<br>
+    <br><br>
+    
+    <tr><td>Country</td><td><select>
+        <option hidden>---select your country---</option>
+        <option selected>India</option>
+        <option>USA</option>
+        <option>canada</option>
+        <option disabled>Australia</option>
+        </select></td></tr> <br><br>
+    
+        <td colspan="3">Image: <input type="text"><input type="file"></td></td> <br><br>
+    
+    
+    <input type="Submit"></td> <br>
+    
+    </form>
+   
+</body>
+</html>
