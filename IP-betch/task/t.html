@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+    overflow-x: hidden;
+    background-color: #6C5CE7;
+}
+
+ul {
+    list-style: none;
+}
+
+.section {
+    padding: 80px 30px;
+}
+
+.row {
+    display: flex;
+}
+
+.home .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    background: url(../task/images/wave.png);
+    background-size: 1000px 110px;
+    background-repeat: repeat-x;
+    animation: dariyos 10s linear infinite;
+}
+
+.home .wave2 {
+    animation-direction: reverse;
+    opacity: .2;
+}
+
+.home .wave3 {
+    animation-delay: 8s;
+    opacity: .5;
+}
+
+@keyframes dariyos {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 2000px;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    z-index: 999;
+}
+
+.header a {
+    color: #fff;
+}
+
+.header .logo {
+    font-size: 30px;
+}
+
+.header .logo i {
+    margin-right: 10px;
+}
+
+.fa-bars {
+    display: none;
+}
+
+.header .navbar ul {
+    display: flex;
+    gap: 20px;
+}
+
+.header .navbar ul li a {
+    font-size: 20px;
+    color: #fff;
+    padding-bottom: 3px;
+}
+
+.header .navbar ul li a.active {
+    border-bottom: 3px solid #ccc;
+}
+
+.header .navbar ul li a:hover {
+    color: #ccc;
+}
+
+.home {
+    min-height: 100vh;
+    background: linear-gradient(purple, var(--color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    position: relative;
+}
+
+.home .banner {
+    padding-left: 20px;
+    font-size: 50px;
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+}
+
+.home .p {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.home button {
+    margin-top: 20px;
+    font-size: 20px;
+    width: 180px;
+    height: 40px;
+    color: #444;
+    background: #fff;
+    outline: none;
+    border: none;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    font-weight: 400;
+}
+
+.home button:hover {
+    letter-spacing: 1px;
+}
+
+.home i {
+    position: absolute;
+    font-size: 300px;
+    opacity: .15;
+    color: #fff;
+    animation-duration: 10s;
+}
+
+.circle1 {
+    top: 10%;
+    left: -150px;
+}
+
+.circle2 {
+    bottom: 23%;
+    right: -130px;
+    animation-direction: reverse;
+}
+
+@media (max-width: 800px) {
+
+    .fa-bars {
+        display: block;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .navbar {
+       display: none;
+    }
+
+    .home .banner {
+        font-size: 30px;
+    }
+
+    .home .p {
+        font-size: 15px;
+    }
+
+}
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <i class="fa-solid fa-pen"></i>Design
+        <div class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home" class="">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#service">services</a></li>
+                <li><a href="#team">team</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <h1 class="banner">Web Design & Development Services</h1>
+        <h3 class="p">You Have A Vision. We Have A Team To Get You There</h3>
+        <a href="#"><button>Get Started</button></a>
+        <i class="fa-solid fa-cog fa-spin circle1"></i>
+        <i class="fa-solid fa-cog fa-spin circle2"></i>
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+    </section>
+</body>
+
+</html>

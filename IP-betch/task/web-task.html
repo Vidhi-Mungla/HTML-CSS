@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style-type: none;
+    }
+    .logo {
+        width: 50%;
+        font-size: 25px;
+        padding: 20px;
+    }
+    .menu {
+        width: 50%;
+    }
+    .navbar {
+        display: flex;
+        background-color: pink;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    ul li {
+        display: inline-block;
+        text-align: center;
+        padding: 22px;
+        position: relative;
+    }
+
+    ul li::after {
+        content: " ";
+        width: 0px;
+        height: 3px;
+        background-color: white;
+        position: absolute;
+        top: 80%;
+        left: 0%;
+        transition: 0.4s;
+        border-radius: 23px;
+    }
+
+    li:hover::after {
+        width: 100%;
+    }
+    .a {
+        width: 100%;
+        height: 200px;
+        border: 1px solid black;
+    }
+
+body {
+    height: 500px;
+    overflow-x: hidden;
+    background-color: rgb(139, 18, 117);
+}
+
+ul {
+    list-style: none;
+}
+
+.section {
+    padding: 80px 30px;
+}
+
+.row {
+    display: flex;
+}
+
+.home .dariyo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    background: url(../Images/dariyo.png);
+    background-size: 1000px 110px;
+    background-repeat: repeat-x;
+    animation: dariyos 10s linear infinite;
+}
+
+.home .dariyo2 {
+    animation-direction: reverse;
+    opacity: .2;
+}
+
+.home .dariyo3 {
+    animation-delay: 8s;
+    opacity: .5;
+}
+
+@keyframes dariyos {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 2000px;
+    }
+}
+
+.home {
+    min-height: 100vh;
+    background: linear-gradient(purple, var(--color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    position: relative;
+}
+
+.home .banner {
+    padding-left: 20px;
+    font-size: 50px;
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+}
+
+.home .p {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.home button {
+    margin-top: 20px;
+    font-size: 20px;
+    width: 180px;
+    height: 40px;
+    color: #444;
+    background: #fff;
+    outline: none;
+    border: none;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    font-weight: 400;
+}
+
+.home button:hover {
+    letter-spacing: 1px;
+}
+
+.home i {
+    position: absolute;
+    font-size: 300px;
+    opacity: .15;
+    color: #fff;
+    animation-duration: 10s;
+}
+
+.circle1 {
+    top: 10%;
+    left: -150px;
+}
+
+.circle2 {
+    bottom: 23%;
+    right: -130px;
+    animation-direction: reverse;
+}
+
+@media (max-width: 800px) {
+
+}
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-pen"></i> Design
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        </div>
+      <section class="home" id="home">
+        <h1 class="banner">Web Design & Development Services</h1>
+        <h3 class="p">You Have A Vision. We Have A Team To Get You There</h3>
+        <a href="#"><button>Get Started</button></a>
+        <i class="fa-solid fa-cog fa-spin circle1"></i>
+        <i class="fa-solid fa-cog fa-spin circle2"></i>
+        <div class="dariyo dariyo1"></div>
+        <div class="dariyo dariyo2"></div>
+        <div class="dariyo dariyo3"></div>
+    </section>
+</body>
+
+</html>
