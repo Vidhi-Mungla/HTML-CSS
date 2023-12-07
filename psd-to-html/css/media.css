@@ -1,0 +1,273 @@
+@media(max-width:600px)
+{
+
+.header .logo
+{
+    padding-left: 20px;
+}
+.header .navbar
+{
+    display: none;
+}
+
+.header .icon i
+{
+    left: 350px;
+}
+.dancer-div img{
+    display: none;
+}
+.dancer-div .text p
+{
+    width: 500px;
+    font-size: 25px;
+    left: 20px;
+}
+
+.dancer-div .threediv
+{
+    height: auto;
+    flex-wrap: wrap;
+}
+.dancer-div .threediv .first,.dancer-div .threediv .second,.dancer-div .threediv .third 
+{
+    width: 100%;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+.dancer-div .threediv .first b,.dancer-div .threediv .second b,.dancer-div .threediv .third b
+{
+    padding-left: 140px;
+    
+}
+.dancer-div .threediv .second b
+{ 
+    padding-left: 90px;
+}
+
+.dancer-div .threediv .third b
+{
+    padding-left: 65px;
+} 
+.pricing .text p
+{
+    width: 500px;
+    font-size: 25px;
+    left: 20px;
+}
+.pricing .threediv
+{
+    height: 1600px;
+    flex-wrap: wrap;
+}
+.pricing .threediv .first,.pricing .threediv .second,.pricing .threediv .third
+{
+    width: 100%;
+}
+.amazing-div
+{
+    flex-wrap: wrap;
+}
+.amazing-div .left,.amazing-div .right
+{
+    height: 500px;
+    width: 100%;
+    padding-left: 100px;
+}
+.amazing-div .right b
+{
+    padding-top: 70px;
+  
+}
+.amazing-div .right p
+{
+    padding-top: 50px;
+}
+.amazing-div .right button
+{
+   
+    margin-top: 50px;
+}
+
+
+.best-dance
+{
+    flex-wrap: wrap;
+}
+.best-dance .right,.best-dance .left 
+{
+    height: 500px;
+    width: 100%;
+    padding-left:100px;
+}
+.best-dance .left b
+{
+    padding-top: 70px;
+}
+.best-dance .left p
+{
+    padding-top: 50px;
+}
+.best-dance .left button
+{
+    margin-top: 50px;
+}
+.statistic .text
+{
+    height: 200px;
+}
+.statistic .text b
+{
+    font-size: 50px;
+    padding-top: 100px;
+
+}
+.statistic .text p
+{
+    width: 500px;
+    font-size: 25px;
+    left: 20px;
+    top: 200px;
+}
+.statistic .bottom
+{
+    height: 800px;
+    flex-wrap: wrap;  
+}
+.statistic .bottom .club,.statistic .bottom .member,.statistic .bottom .community
+{
+    height: 100px;
+    width: 100%;
+}
+
+.statistic .bottom .club b,.statistic .bottom .member b,.statistic .bottom .community b
+{
+   font-size: 60px;
+   top: 150px;
+   left: 200px;
+
+}
+.statistic .bottom .club p
+{
+    font-size: 35px;
+   top: 220px;
+   left: 240px;
+
+}
+.statistic .bottom .member p
+{
+    font-size: 35px;
+    top: 220px;
+    left: 160px;
+}
+.statistic .bottom .community p
+{
+    font-size: 42px;
+    top: 220px;
+    left: 180px;
+}
+.image
+{
+    height: 600px;
+}
+.image .orange-div
+{
+    height: 600px;
+}
+.image .orange-div p
+{
+    width: 500px;
+    font-size: 30px;
+    text-align: center;
+    top: 150px;
+    left: 20px;
+}
+.image .orange-div b
+{
+    font-size: 40px;
+    top: 340px;
+    left: 100px;
+
+}
+.subscribe
+{
+    height: 500px;
+}
+
+.subscribe .img1
+{
+left: -50px;
+}
+
+.subscribe .img2
+{
+right:-50px;
+}
+.subscribe b
+{
+    font-size:50px;
+    top: 100px;
+    left:150px;
+}
+.subscribe p{
+    width: 500px;
+    font-size: 25px;
+    top: 200px;
+    left:50px;
+}
+.subscribe input
+{
+    height: 50px;
+    width: 300px;
+    top: 350px;
+    left: 100px;
+}
+.subscribe button
+{
+    height: 50px;
+    width: 70px;
+    top: 320px;
+    left:400px;
+}
+
+
+
+
+
+
+
+
+.footer
+{
+flex-wrap: wrap;
+}
+.footer .Musicology
+{
+    height:450px;
+    width: 100%;
+}
+
+.footer .About
+{
+    width: 100%;
+}
+
+.footer .Services
+{
+    width: 100%;
+
+}
+
+.footer .Other
+{
+    width: 100%;
+
+}
+
+
+
+
+
+
+}
