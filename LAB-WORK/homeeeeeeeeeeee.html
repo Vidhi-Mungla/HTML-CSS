@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main
+        {
+            height:300px ;
+            width:100%;
+            background-color: aqua;
+            border: 2px solid;
+            display: flex;
+           
+        }
+        .main .left 
+        {
+            height: 300px;
+            width: 50%;
+            border: 1px solid; 
+        }
+        .main .right
+        {
+            background: url(https://iheartcraftythings.com/wp-content/uploads/2021/05/Rose-DRAWING-%E2%80%93-STEP-10.jpg);
+            background-size: 100% 100%;
+            object-fit: contain;
+            height: 300px;
+            width: 50%;
+            border: 1px solid; 
+        }
+        @media(max-width: 700px)
+        {
+            .main
+         {
+           display: inline;
+         }
+         .main .left
+        {
+            background-color: blueviolet;
+            width: 100%;
+        }
+        .main .right
+        {
+            width: 100%;
+
+        }
+
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+            <div class="left"></div>
+            <div class="right"></div>
+    </div>
+</body>
+</html>
