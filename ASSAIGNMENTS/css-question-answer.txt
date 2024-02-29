@@ -1,17 +1,16 @@
 • What are the benefits of using CSS?
 ===> 
 
-1) Faster Page Speed. More code means slower page speed. ...
-2) Better User Experience. CSS not only makes web pages easy on the eye, it also allows for user-friendly formatting. ...
-3) Quicker Development Time. ...
-4) Easy Formatting Changes. ...
+1) Faster Page Speed. More code means slower page speed....
+2) Better User Experience. CSS not only makes web pages easy on the eye, it also allows for user-friendly formatting....
+3) Quicker Development Time....
+4) Easy Formatting Changes....
 5) Compatibility Across Devices.
 
 
 
 • What are the disadvantages of CSS?
 ===>
-
 1) Limitations of vertical control.
 2) You cannot add more than 10,000 characters within the CSS section per event.
 3) No expressions.
@@ -109,8 +108,8 @@ background-attachment: scroll|fixed|local|initial|inherit;
 Value    				Description
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 scroll	|	The background image will scroll with the page. This is default
-fixed	|	The background image will not scroll with the page
-local	|	The background image will scroll with the element's contents
+fixed 	|	The background image will not scroll with the page
+local	   |	The background image will scroll with the element's contents
 initial	|	Sets this property to its default value. Read about initial
 inherit	|	Inherits this property from its parent element. Read about inherit
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -145,7 +144,7 @@ background-attachment
 Syntax:
 
 element {
-    background-color property
+    background-color property:"value";
 }
 
 
@@ -240,8 +239,6 @@ there are three ways to integrate css into a web page
 3)imported\Linked
 
 
-
-
 • What is embedded style sheets?
 ===>
 
@@ -286,7 +283,6 @@ style sheet. External style sheets are an important tool from the webmaster’s 
 
 
 
-
 • What are the advantages and disadvantages of using external style sheets?
 ===>
 
@@ -302,13 +298,11 @@ The advantages of External Style Sheets are:
 
 The disadvantages of External Style Sheets are:
 
--Your pages may not be rendered correctly until the external CSS is loaded.
--Uploading or linking to multiple CSS files can increase your site's download time.
+- Your pages may not be rendered correctly until the external CSS is loaded.
+- Uploading or linking to multiple CSS files can increase your site's download time.
 - In order to import style information for each document, an extra download is needed.
 - Until the external style sheet is loaded, it may not be possible to render the document.
 - For small number of style definitions, it is not viable.
-
-
 
 
 
@@ -368,7 +362,6 @@ Example:
 
 
 
-
 • What is the rule set?
 ===>
 A CSS rule set contains one or more selectors and one or more declarations. The selector(s), which in this example is h1 , points to an HTML element. The declaration(s), which in this example are color: blue and text-align: center style the element with a property and value.
@@ -376,6 +369,8 @@ A CSS rule set contains one or more selectors and one or more declarations. The 
 A CSS ruleset is various affirmations to various pieces or elements of the document. The objective is to apply a bunch of properties for certain distinct qualities to a solitary, or a particular arrangement of components in the connected HTML page. 
 
 Visualization of CSS Ruleset :
+
+
 
 
 CSS ruleset

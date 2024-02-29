@@ -5,68 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
-        body 
+        .conic
         {
-            background: #000;
+            height: 300px;
+            width: 300px;
+            background-image:conic-gradient(yellow,red,green);
         }
-        .x 
-        {
-            height: 100px;
-            width: 100px;
-            background: conic-gradient(red,blue);
-            border-radius: 50%;
-            border: 2px solid white;
-            float: left;
-            margin: 18px;
-        }
-
-        .y 
-        {
-            background: conic-gradient(from -60deg,red,yellow);
-        }
-
-        .z 
-        {
-            background: conic-gradient(at 20% 80%,red,blue,yellow,green,red,pink);
-        }
-
-        .a
-        {
-            background: conic-gradient(red 0deg,red 90deg,blue 90deg,blue 180deg,yellow 180deg,yellow 270deg,green 270deg,green 360deg);
-        }
-        
-        .b 
-        {
-            background: repeating-conic-gradient(lightblue 0deg,lightblue 20deg,rgb(195, 33, 138) 20deg, coral 30deg);
-        }
-
-        .c 
-        {
-            background: repeating-conic-gradient(lightblue 0deg,lightblue 20deg,transparent 20deg, rgb(195, 28, 28) 30deg);
-
-            background-size: 30%;
-        }
-
-        .p
-        {
-            background: repeating-conic-gradient(lightblue 0deg,lightblue 20deg,transparent 20deg, transparent 30deg);
-
-            background-color:pink;  
-        }
-
-       
     </style>
 </head>
 <body>
-    
-    <div class="x"></div>
-    <div class="x y"></div>
-    <div class="x z"></div>
-    <div class="x a"></div>
-    <div class="x b"></div>
-    <div class="x c"></div>
-    <div class="x p"></div>
-    
+    <div class="conic"></div>
 </body>
 </html>
