@@ -1,0 +1,594 @@
+
+@media(max-width:600px) {
+.banner
+{
+    height: 840px;
+}
+.header
+ {
+ grid-template-columns: 1fr 3fr;
+}
+    
+.banner .heading h1
+{
+    font-size: 80px;
+  
+}
+.banner .heading  p
+{ 
+    font-size: 16px;
+    line-height: 40px;
+}
+.banner .heading .banner-icons
+{
+    display: none;
+}
+.banner .heading .arrow-div
+{
+    top: 750px;
+}
+    .banner .header .logo
+    {    
+        margin-left: 10px;
+        background-size:80px 50px;
+    }
+    
+    .lte-navbar-items {
+        display: none;
+    }
+
+    .header-icon ul 
+    {
+        display: none;
+    }
+
+    .header-icon
+     {
+        display: flex;
+        justify-content: end;
+        padding-right: 35px;
+    }
+
+    .header-icon .menu-bar 
+    {
+        display: block;
+        cursor: pointer;
+        font-size: 33px;
+    }
+
+.banner2{
+    padding: 40px 0;
+    padding-inline: 20px;
+}
+
+.banner2 .professional{
+    width: 100%;
+    flex-wrap: wrap;
+}
+.banner2 .professional .left{
+    width: 100%;
+}
+.banner2 .professional .left h1{
+    font-size: 32px;
+    text-align: center;
+}
+.banner2 .professional .left p{
+    text-align: center;
+    padding-inline: 20px;
+}
+.banner2 .professional .left .images .img1{
+    height: 200px;
+}
+.banner2 .professional .left .images .img2{
+    height: 200px;
+}
+.banner2 .professional .left .images .img3{
+    height: 200px;
+}
+.banner2 .professional .left .images{
+    height: 180px;
+}
+.banner2 .professional .left button{
+    margin-left:30%;
+}
+.banner2 .professional .right{
+    height: 600px;
+    width: 100%;
+    margin: 60px 0px;
+}
+.banner2 .professional .right .watch-video{
+    top: 82%;
+    left: 46%;
+}
+.card-rotate-main
+{
+    height: 3900px;
+}
+.card-rotate-main .sub-card .text
+{
+    width: 100%;
+    text-align: center;
+    
+}
+.card-rotate-main .sub-card .text h2
+{
+    font-size: 40px;
+    line-height: 50px;
+}
+.card-rotate-main .sub-card .text p
+{
+    font-size: 16px;
+}
+.card-rotate-main .sub-card .text button
+{
+    margin-top: 30px;
+}
+.card-rotate-main .sub-card .first,.card-rotate-main .sub-card .second,.card-rotate-main .sub-card .third,.card-rotate-main .sub-card .four,.card-rotate-main .sub-card .five,.card-rotate-main .sub-card .six,.card-rotate-main .sub-card .seven
+{
+    width: 100%;
+    
+}
+.portfolio-div
+{
+    height: 800px;
+    position: relative;
+}
+.portfolio-div .t
+{
+    height: 200px;
+}
+
+.portfolio-div .t p
+{
+    font-size: 25px;
+    padding-top: 80px;
+    padding-left: 170px;
+}
+
+.portfolio-div .t b
+{
+    font-size: 35px;
+    padding-left: 70px;
+
+}
+.portfolio-div .images .firstimg .innerimg1 .img1
+{
+    height: 350px;
+}
+.portfolio-div .images .firstimg
+{
+    width: 100%;
+
+}
+.portfolio-div .images .firstimg b
+{
+    line-height: 65px;
+
+}
+.portfolio-div .images .secondimg
+{
+    display: none;
+}
+
+.portfolio-div .arrow
+{
+    height: 80px;
+    width: 160px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    right: 38%;
+    display: flex;
+    text-align: center;
+
+}
+.portfolio-div .arrow .left
+{
+    height: 80px;
+    width: 80px;
+}
+.portfolio-div .arrow .left:hover
+{
+    background-color: black;
+}
+.portfolio-div .arrow .right:hover
+{
+    background-color: black;
+}
+.portfolio-div .arrow .left i,.portfolio-div .arrow .right i
+{
+    font-size: 30px;
+    line-height: 80px;
+}
+.portfolio-div .arrow .left:hover i
+{
+    color:#B19777;
+}
+.portfolio-div .arrow .right:hover i
+{
+    color:#B19777;
+}
+
+.portfolio-div .arrow .right
+{
+    height: 80px;
+    width: 80px;
+}
+.trend
+{
+    height: 850px;
+    display: inline;
+}
+.trend .left
+{
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    margin: 100px auto;
+
+}
+.trend .left b
+{
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.trend .left p
+{
+    font-weight: bold;
+    padding-top: 30px;
+    padding-left: 0px;
+}
+
+.trend .right
+{
+    height: 400px;
+    width: 100%;
+    background-size: 70% 90%;
+    margin-top: -150px;
+}
+
+.trend .right .pencil
+{
+   background-size: 60% 40%;
+    top: 180px;
+    left: 290px; 
+}
+
+.trend .right .spek
+{
+    background-size: 40% 50%;
+    top: 260px;
+    left: 70px;
+}
+
+.trend .right .twopencil
+{
+    background-size: 50% 60%;
+    top: 20px;
+    left: -20px;
+}
+.project-img
+{
+    height: 2800px;
+}
+.project-img .blackdiv
+{
+    height: 2800px;
+}
+
+.project-img .blackdiv .up
+{
+        padding-top: 80px;
+}
+.project-img .blackdiv .up b
+{
+    font-size: 35px;
+}
+.project-img .blackdiv .up p
+{
+    font-size: 16px;
+    line-height: 30px;
+    padding-top: 30px;
+}
+
+.project-img .blackdiv .fourdiv
+{
+    display: inline;
+
+}
+.project-img .blackdiv .fourdiv .one,.project-img .blackdiv .fourdiv .two,.project-img .blackdiv .fourdiv .four
+{
+    height: 600px;
+    width:90%;
+    margin: 20px 20px 20px 20px;
+}
+.project-img .blackdiv .fourdiv .three
+{
+    height: 600px;
+    width:90%; 
+    margin: 20px 20px 20px 20px;
+
+}
+
+.main
+{
+    height: 1100px;
+    background-size: 40% 100%,40% 100%;
+    background-position: 0 0,110% 1%;
+}
+
+.main .whitediv 
+{
+    height: 1100px;
+}
+.main .whitediv .up
+{
+    height: 200px;
+    padding-top: 180px;
+
+}
+.main .whitediv .up b
+{
+    font-size: 35px;
+    line-height: 45px
+
+}
+.main .whitediv .down
+{
+    height: 950px;
+    width: 100%;
+    display: inline;
+}
+.main .whitediv .down .one,.main .whitediv .down .two,.main .whitediv .down .three,.main .whitediv .down .four
+{
+    height: 400px;
+    width: 50%;
+    float: left;
+}
+.main .whitediv .down .one .hover span,.main .whitediv .down .two .hover span,.main .whitediv .down .three .hover span,.main .whitediv .down .four .hover span
+{
+    font-size: 100px;
+}
+.main .whitediv .down .one .hover,.main .whitediv .down .two  .hover,.main .whitediv .down .three .hover,.main .whitediv .down .four .hover
+{
+    height: 120px;
+    width: 120px;
+    top: 25%;
+    left: 25%;
+}
+.main .whitediv .down .one .hover:hover,.main .whitediv .down .two  .hover:hover,.main .whitediv .down .three .hover:hover,.main .whitediv .down .four .hover:hover
+{
+    top: 22%;
+}
+.main .whitediv .down .one h5,.main .whitediv .down .two h5,.main .whitediv .down .three h5,.main .whitediv .down .four h5
+{
+    font-size: 25px;
+    padding-top: 40px;
+}
+.main .whitediv .down .one p,.main .whitediv .down .two p,.main .whitediv .down .three p,.main .whitediv .down .four p
+{
+    width: 200px;
+    padding-left: 50px;
+}
+
+.stylish-div
+{
+    height: 600px;
+   
+}
+.stylish-div .dot-div
+{
+    height: 300px;
+    width: 100%;
+    top: 100px;
+    left: 0px;
+    text-align: center;
+}
+
+.stylish-div .dot-div b
+{
+    font-size: 45px;
+    line-height: 60px;
+}
+
+.percentage-div
+{
+    height: auto;
+    width: 100%;
+    display: inline;
+}
+.percentage-div .skill-card 
+    {
+        height: 390px;
+    width: 100%;
+}
+.text {
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 50px;
+    color: black;
+}
+.team
+{
+    height: 3100px;
+}
+
+.team .up
+{
+    height: 300px;
+}
+ 
+.team .up p
+{
+font-size: 130px;
+padding-top: 80px;
+}
+
+.team .up b
+{
+    color: #B19777;
+    font-size: 20PX;
+    top: 120px;
+    left: 200px;
+}
+.team .up h3
+{
+    font-size: 30px;
+    top: 150px;
+    left: 120px;
+}
+ 
+.team .down
+{
+    display: inline;
+}
+.team .down .img1,.team .down .img2,.team .down .img3,.team .down .img4 
+{
+    width: 90%;
+    height: 700px;
+    padding-left: 40px;
+}
+.team .down .img1 b,.team .down .img2 b,.team .down .img3 b,.team .down .img4 b
+{
+    top: 610px;
+    left: 170px;
+}
+
+.team .down .img1 p,.team .down .img2 p,.team .down .img3 p,.team .down .img4 p
+{
+    top: 640px;
+    left: 190px;
+}
+.team .down .img1 .border1img,.team .down .img2 .border2img,.team .down .img3 .border3img,.team .down .img4 .border4img
+{
+    height: 600px;
+}
+.team .down .img1 .border1img .subimg1,.team .down .img2 .border2img .subimg2,.team .down .img3 .border3img .subimg3,.team .down .img4 .border4img .subimg4
+{
+   height: 500px;
+   width: 90%;
+   margin-top: 45px;
+}
+.fixedimg
+{
+    height: 600px;
+}
+.fixedimg .arrow
+{
+    right: 35%;
+}
+.fixedimg b{
+    font-size: 16px;
+}
+.fixedimg .client
+{
+    
+    top: 200px;
+    left: 200px;
+}
+.fixedimg span{
+    font-size: 70px;
+}
+.fixedimg h2
+{
+margin-top: 250px;
+}
+
+.blog
+{
+    height: 2600px;
+   }
+.blog .up{
+    height: 250px;
+   
+}
+.blog .down{
+    height: 2250px;
+    width: 100%;
+}
+.blog .up p
+{
+    font-size: 150px;
+    padding-top: 30px;
+}
+.blog .up b
+{
+    top: 70px;
+    left: 200px;
+}
+.blog .up h3
+{
+    font-size: 35px;
+    top: 100px;
+    left: 100px;
+}
+.blog .down .four-part
+{
+    height: 2250px;
+    display: inline;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.blog .down .four-part .first,.blog .down .four-part .second,.blog .down .four-part .third,.blog .down .four-part .four
+{
+    width: 100%;
+}
+.blog .down .four-part .first .img1,.blog .down .four-part .second .img2,.blog .down .four-part .third .img3,.blog .down .four-part .img4
+{
+    height: 300px;
+   
+}
+.blog .down .four-part .first .text1 p,.blog .down .four-part .second .text2 p,.blog .down .four-part .third .text3 p,.blog .down .four-part .text4 p
+{
+    width: 100%;
+}
+
+.subscribe .blackdiv b{
+    font-size: 22px;
+    padding-top: 30px;
+}
+
+.subscribe .blackdiv .emaildiv
+{
+   width: 90%;
+   top: 130px;
+   left: 20px;
+   display: inline;
+}
+
+.subscribe .blackdiv .emaildiv .left input
+{
+    font-size: 18px;
+    padding-left: 15px;
+    line-height: 60px;
+}
+.subscribe .blackdiv .emaildiv .right button
+{
+    width: 450px;
+    margin-top: 40px;
+}
+.footer .up .threepart
+{
+    display: inline;
+    text-align: center;
+}
+.footer .up .threepart .first
+{
+    width: 100%;
+}
+.footer .up .threepart .second,.footer .up .threepart .third
+{
+    display: none;
+}
+.footer .up .threepart .first img
+{
+   margin-top: 70px;
+}
+.footer .up .threepart .first .icons
+{
+   
+    margin-left:150px;
+}
+
+}

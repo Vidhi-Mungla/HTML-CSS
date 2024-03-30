@@ -1,0 +1,220 @@
+/* media 1200 */
+
+@media(max-width:1200px)
+{
+    .grid-main{
+            grid-template-columns: repeat(1, 1fr);
+    }
+    .form{
+            padding: 20px;
+    }
+    
+    footer
+    {
+        grid-template-columns:  1fr;
+
+    }
+    .lte-navbar-items ul li a {
+        font-size: 13px;
+    }
+    
+}
+
+
+ 
+/* media 992 */
+@media(max-width:992px) 
+{
+
+    .lte-navbar-items ul li a {
+        font-size: 10px;
+        padding-left: 5px;
+
+    }   
+
+}
+
+
+/* media 768 */
+@media(max-width:768px) 
+{
+.mainheader
+{
+     height: 400px;
+}
+.mainheader .heading .banner-icons
+{
+    display: none;
+}
+   
+.mainheader .header .logo
+{    
+    margin-left: 10px;
+    background-size:80px 60px;
+    width: 200px;   
+}
+        
+.lte-navbar-items 
+{
+    display: none;
+}
+    
+ .header-icon ul
+{
+    margin-top: 35px;
+    border: 1px solid white;
+
+}
+
+.header-icon ul li i
+{
+   font-size: 15px;
+}
+
+.mainheader .text
+{
+   margin-top: 100px;
+   margin-left: 180px;
+}
+
+footer
+{
+   width: 100%;
+   height: auto;
+   grid-template-columns:  1fr;
+   padding: 40px;
+}
+
+}
+
+
+
+
+/* media 500 */
+
+@media(max-width:500px) {
+.mainheader  
+{
+    height: 400px;
+}
+ 
+.mainheader .heading .banner-icons
+{
+    display: none;
+}
+   
+.mainheader .header .logo
+ {    
+     background-size:80px 50px;
+     
+}
+             
+ .header-icon ul
+{
+    margin-top: 35px;
+    margin-left: 180px;
+
+}
+.header-icon ul li i
+{
+   font-size: 15px;
+}
+
+.mainheader .text
+{
+    text-align: start;
+    margin-left: 100px;
+}
+
+
+}
+
+
+
+
+@media(max-width:1100px){
+    .footer .info .content1 .subscribe button{
+       padding: 8px 8px;
+    }
+    .footer .info .content1 .subscribe input{
+    padding: 8px 0px;
+    }
+    
+}
+
+@media(max-width:900px)
+{
+        .footer .container{
+        width: 100%;
+        display: block;
+    }
+    .footer .contact-us {
+        width: 100%;
+    }
+    
+    .footer .info{
+        width: 100%;
+    }
+    .footer .info .content1{
+        display: block;
+    }
+    .footer .info .content1 .links{
+        width: 100%;text-align: center;
+    }
+    .footer .info .content1 .feature{
+        width: 100%;text-align: center;
+    }
+    .footer .info .content1 .social{
+        width: 100%;text-align: center;
+    }
+    .footer .info .content1 .subscribe{
+        width: 100%;text-align: center;
+    }
+    .subfooter{
+        display: block;
+    }
+    .subfooter .copyright{
+        width: 100%;
+        text-align: center;
+    padding: 10px 0 10px 0px;
+
+    }
+    .subfooter .contact{
+        width: 100%;
+        text-align: center;
+    }
+    .footer .info .content1 .subscribe button{
+        padding: 8px 12px;
+     }
+     .footer .info .content1 .subscribe input{
+        padding: 8px 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

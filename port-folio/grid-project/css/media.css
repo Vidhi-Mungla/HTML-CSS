@@ -1,0 +1,266 @@
+@media(max-width:700px)
+{
+header{
+    grid-template-columns: 1fr;
+    grid-template-rows: 55px;
+}
+header nav{
+    display: none;
+}
+header .actions{
+    display: none;
+}
+header .logo{justify-content: start;
+    padding-left: 22px;
+}
+       
+header .logo span{
+    display: block;
+    right: 4%;
+    top: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.banner-1-info .downicon{
+    top: 330px;
+    left: -80px;
+
+}
+.banner-1{
+    height: 550px;
+}
+
+
+.about{
+    grid-template-columns: 1fr;
+    grid-template-rows: 650px 650px;
+    margin-bottom: 50px;
+}
+.about .left .image{
+    left: 0px;
+
+}
+
+.about .right .about-text{
+    width: 100%;
+}
+.about .right .about-text h1
+{
+font-size: 28px;
+padding-top: 10px;
+line-height: 32px;
+
+}
+.about .right .about-text p
+{
+  word-spacing: 0px; 
+  font-size:18px; 
+  line-height: 28px;
+}
+.about .right .about-text b
+{
+    font-size: 10px;
+    line-height: 5px;
+}
+.about .right .about-text .div1{
+    height: 30px;
+    width: 100px;
+   /* margin-top: 20px; */
+}
+.about .right .about-text .div2{
+    height: 30px;
+    width: 130px;
+    margin-left: 130px;
+    margin-top: -30px;
+}
+.about .right .about-text .div3{
+    height: 30px;
+    width: 100px;
+    margin-left: 280px;
+    margin-top: -30px;
+}
+.about .right .about-text .readmore-box
+{
+    height: 50px;
+    width: 150px;
+    margin-top: 30px;
+
+}
+.about .right .about-text .readmore-box p{
+    font-size: 18px;
+
+}
+.feature-box{
+    height: 1300px;
+}
+
+.feature-box .text{
+    width: 100%;
+    left: 0px;
+
+}
+.feature-box .four-features{
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,240px);
+    left:0px;
+}
+
+.professional
+{
+    height: 1500px;
+}
+.professional .down{
+    width: 100%;
+    margin-top: 0px
+}
+.professional .down .persons-div{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,400px);
+}
+.professional .down .person1 .black1 .fourstar,.professional .down .person2 .black2 .fourstar,.professional .down .person3 .black3 .fourstar
+{
+    left: 130px;
+}
+
+.main{
+    height: 550px;
+}
+.main .blackdiv{
+    height: 550px;
+
+}
+.main .blackdiv .after-before{
+    height: 250px;
+    width: 100%;
+    grid-template-rows: 250px;
+
+}
+.main .blackdiv p
+{
+    font-size: 3lvw;
+    line-height: 30px;
+}
+.main .blackdiv b
+{
+    font-size: 5lvw;
+}
+
+.count
+{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,200px);
+    text-align: center;
+    line-height: 40px;
+    padding-bottom: 100px;
+
+}
+.pro-complete i,.client i,.revenue i,.awards i
+{
+    font-size: 50px;
+}
+.pro-complete h1,.client h1,.revenue h1,.awards h1
+{
+    font-size: 40px;
+}
+
+
+.blog .up
+{
+    height: 230px;
+}
+.blog .up p
+{
+    font-size: 20px;
+}
+.blog .up b
+{
+    font-size: 30px;
+}
+.threeimg{
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,500px);
+}
+.blog{
+    height: 1800px;
+}
+
+.contact-us{
+    height: 950px;
+}
+
+.contact-us .down .threepart
+{
+     width: 100%;
+     grid-template-columns: 1fr;
+     grid-template-rows: repeat(3,200px);
+
+}
+.down .threeimg #para{
+    font-size: 18px;
+  
+}
+.contact-us .down .threepart .first i,.contact-us .down .threepart .second i,.contact-us .down .threepart .third i
+{
+    font-size: 5lvw;
+   
+}
+.down .threeimg .first a
+{
+    top: 89%;
+}
+.down .threeimg .second a
+{
+    top: 89%;
+}
+.down .threeimg .third a
+{
+    top: 89%;
+}
+.information
+{
+    height: 1300px;
+}
+.information .up .sub-div
+{  
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 200px 150px 150px;
+
+}
+
+.information .up .sub-div .logo .first{
+    margin-top: 50px;
+}
+.information .up .sub-div .logo .third{
+    margin-top: -8%;
+}
+.information .down
+{
+    height: 100px;
+    top: 750px;
+}
+.information .down p
+{ 
+    padding-left:10px;
+    line-height: 0px;
+    margin-right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+}
